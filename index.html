@@ -300,20 +300,23 @@
 
       .hero-date {
         display: inline-flex;
-        gap: 14px;
-        align-items: baseline;
+        flex-wrap: nowrap;
+        align-items: center;
         justify-content: center;
+        gap: clamp(8px, 3cqw, 14px);
+        max-width: 100%;
+        margin-bottom: 28px;
         font-family: var(--display);
         font-style: normal;
         letter-spacing: 0.18em;
         text-transform: uppercase;
         color: #f8efe3;
-        font-size: 0.85rem;
-        margin-bottom: 28px;
+        font-size: clamp(0.62rem, 2.3cqw, 0.85rem);
+        white-space: nowrap;
         text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
       }
       .hero-date .date-day {
-        font-size: 2.6rem;
+        font-size: clamp(1.9rem, 8cqw, 2.6rem);
         font-weight: 700;
         letter-spacing: 0;
         text-transform: none;
@@ -321,8 +324,11 @@
         line-height: 1;
       }
       .hero-date .date-sep {
-        opacity: 0.55;
-        font-size: 0.75em;
+        flex: 0 0 auto;
+        width: 1px;
+        height: 2.2rem;
+        background: currentColor;
+        opacity: 0.35;
       }
 
       .hero-scrolldown {
@@ -1887,9 +1893,11 @@
 
             <!-- EDITAR: fecha de la boda -->
             <div class="hero-date">
-              <span>Sábado</span><span class="date-sep">|</span
-              ><span class="date-day">28</span><span class="date-sep">|</span
-              ><span>Noviembre 2026</span>
+              <span class="date-name">Sábado</span>
+              <span class="date-sep" aria-hidden="true"></span>
+              <span class="date-day">28</span>
+              <span class="date-sep" aria-hidden="true"></span>
+              <span class="date-month">Noviembre &middot; 2026</span>
             </div>
 
             <div class="hero-scrolldown">
