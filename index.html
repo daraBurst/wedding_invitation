@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rafa &amp; Astrid</title>
-<meta name="description" content="Invitación de boda de Rafa y Astrid">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rafa &amp; Astrid</title>
+    <meta name="description" content="Invitación de boda de Rafa y Astrid" />
 
-<!--
+    <!--
   =====================================================================
   ONLINE WEDDING INVITATION — editable template
   ---------------------------------------------------------------------
@@ -31,12 +31,15 @@
   =====================================================================
 -->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
 
-<style>
-/* =========================================================
+    <style>
+      /* =========================================================
    0. PANTONE PALETTE → WEB HEX  (converted from spec)
    ---------------------------------------------------------
    PANTONE 20-0112 TPM  "Celebration"       → #820043  (burgundy)
@@ -49,966 +52,2517 @@
    they're the paper/ink ground the palette sits on and were mixed to
    stay warm and low-contrast with it.
    ========================================================= */
-:root{
-  --burgundy:#820043;
-  --olive:#7D7F2E;
-  --rose:#E96393;
-  --terracotta:#F56733;
-  --dustyblue:#B7D1EA;
-  --gold:#F0CC4A;
+      :root {
+        --burgundy: #820043;
+        --olive: #7d7f2e;
+        --rose: #e96393;
+        --terracotta: #f56733;
+        --dustyblue: #b7d1ea;
+        --gold: #f0cc4a;
 
-  --cream:#FBF3E7;
-  --cream-deep:#F3E4CE;
-  --paper:#FFFDF9;
-  --ink:#3B2A22;
-  --ink-soft:#7A6355;
-  --page-bg:#C9B79C;
+        --cream: #fbf3e7;
+        --cream-deep: #f3e4ce;
+        --paper: #fffdf9;
+        --ink: #3b2a22;
+        --ink-soft: #7a6355;
+        --page-bg: #c9b79c;
 
-  --serif: 'Athelas','Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  --display: 'Athelas','Playfair Display', Georgia, serif;
-  --shadow: 0 18px 40px -12px rgba(59,42,34,.35);
-}
+        --serif:
+          "Athelas", "Cormorant Garamond", Georgia, "Times New Roman", serif;
+        --display: "Athelas", "Playfair Display", Georgia, serif;
+        --shadow: 0 18px 40px -12px rgba(59, 42, 34, 0.35);
+      }
 
-*{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{
-  margin:0;
-  background:var(--page-bg);
-  background-image:
-    radial-gradient(circle at 20% 10%, rgba(255,255,255,.12), transparent 40%),
-    radial-gradient(circle at 80% 90%, rgba(0,0,0,.08), transparent 45%);
-  font-family:var(--serif);
-  color:var(--ink);
-  -webkit-font-smoothing:antialiased;
-}
-img{max-width:100%;display:block;}
-h1,h2,h3{font-family:var(--display); margin:0; font-weight:600;}
-p{margin:0 0 1em; line-height:1.7;}
-a{color:inherit;}
-button{font-family:inherit;}
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--page-bg);
+        background-image:
+          radial-gradient(
+            circle at 20% 10%,
+            rgba(255, 255, 255, 0.12),
+            transparent 40%
+          ),
+          radial-gradient(
+            circle at 80% 90%,
+            rgba(0, 0, 0, 0.08),
+            transparent 45%
+          );
+        font-family: var(--serif);
+        color: var(--ink);
+        -webkit-font-smoothing: antialiased;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: var(--display);
+        margin: 0;
+        font-weight: 600;
+      }
+      p {
+        margin: 0 0 1em;
+        line-height: 1.7;
+      }
+      a {
+        color: inherit;
+      }
+      button {
+        font-family: inherit;
+      }
 
-.page{
-  display:flex;
-  justify-content:center;
-  padding:32px 14px;
-}
-.invite-card{
-  position:relative;
-  width:100%;
-  max-width:560px;
-  background:var(--cream);
-  box-shadow:var(--shadow);
-  border-radius:6px;
-  overflow:hidden;
-}
-@media (max-width:600px){
-  .page{padding:0;}
-  .invite-card{border-radius:0; max-width:100%;}
-}
+      .page {
+        display: flex;
+        justify-content: center;
+        padding: 32px 14px;
+      }
+      .invite-card {
+        position: relative;
+        width: 100%;
+        max-width: 560px;
+        background: var(--cream);
+        box-shadow: var(--shadow);
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      @media (max-width: 600px) {
+        .page {
+          padding: 0;
+        }
+        .invite-card {
+          border-radius: 0;
+          max-width: 100%;
+        }
+      }
 
-section{position:relative; padding:72px 32px; overflow:hidden;}
-@media (max-width:480px){ section{padding:56px 22px;} }
+      section {
+        position: relative;
+        padding: 72px 32px;
+        overflow: hidden;
+      }
+      @media (max-width: 480px) {
+        section {
+          padding: 56px 22px;
+        }
+      }
 
-.eyebrow{
-  display:block;
-  font-family:var(--display);
-  letter-spacing:.32em;
-  text-transform:uppercase;
-  font-size:.72rem;
-  color:var(--burgundy);
-  text-align:center;
-  margin-bottom:14px;
-}
-.section-title{
-  text-align:center;
-  font-size:2.1rem;
-  font-style:italic;
-  color:var(--terracotta);
-  margin-bottom:8px;
-}
-.section-sub{
-  text-align:center;
-  color:var(--ink-soft);
-  max-width:36ch;
-  margin:0 auto 34px;
-  font-size:1.02rem;
-}
-.divider{
-  display:flex; align-items:center; justify-content:center; gap:14px;
-  margin:0 auto 30px; width:min(260px,80%);
-}
-.divider svg{width:34px;height:34px;flex:none;}
-.divider::before,.divider::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--terracotta) 50%,transparent);}
+      .eyebrow {
+        display: block;
+        font-family: var(--display);
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+        font-size: 0.72rem;
+        color: var(--burgundy);
+        text-align: center;
+        margin-bottom: 14px;
+      }
+      .section-title {
+        text-align: center;
+        font-size: 2.1rem;
+        font-style: italic;
+        color: var(--terracotta);
+        margin-bottom: 8px;
+      }
+      .section-sub {
+        text-align: center;
+        color: var(--ink-soft);
+        max-width: 36ch;
+        margin: 0 auto 34px;
+        font-size: 1.02rem;
+      }
+      .divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        margin: 0 auto 30px;
+        width: min(260px, 80%);
+      }
+      .divider svg {
+        width: 34px;
+        height: 34px;
+        flex: none;
+      }
+      .divider::before,
+      .divider::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--terracotta) 50%,
+          transparent
+        );
+      }
 
-/* reveal-on-scroll */
-.reveal{opacity:0; transform:translateY(26px); transition:opacity .8s ease, transform .8s ease;}
-.reveal.in-view{opacity:1; transform:translateY(0);}
+      /* reveal-on-scroll */
+      .reveal {
+        opacity: 0;
+        transform: translateY(26px);
+        transition:
+          opacity 0.8s ease,
+          transform 0.8s ease;
+      }
+      .reveal.in-view {
+        opacity: 1;
+        transform: translateY(0);
+      }
 
-/* =========================================================
-   1. HERO
+      /* =========================================================
+   1. HERO — full-bleed photo background, bottom edge masked into
+      a single semicircle that dips into the countdown section
    ========================================================= */
-.hero{
-  padding:0 0 56px;
-  text-align:center;
-  background:
-    radial-gradient(circle at 50% 0%, var(--cream-deep), var(--cream) 60%);
-}
-.hero-inner{padding:76px 30px 0;}
-.monogram-wrap{margin:0 auto 2px; width:116px; height:116px; position:relative;}
-.monogram-wrap svg{width:100%;height:100%; color:var(--terracotta); opacity:.65;}
-.monogram-letters{
-  position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
-  font-family:var(--display); font-style:italic; font-weight:500; font-size:1.5rem; letter-spacing:.06em; color:var(--burgundy);
-}
-.monogram-letters .mono-dot{color:var(--terracotta); padding:0 3px;}
-.mono-flourish{display:block; width:26px; height:38px; margin:10px auto 4px; color:var(--terracotta); opacity:.75;}
-.eyebrow-top{letter-spacing:.35em;text-transform:uppercase;font-size:.68rem;color:var(--olive);margin-bottom:6px;}
+      .hero {
+        position: relative;
+        container-type: inline-size;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        min-height: 100vh;
+        min-height: 100svh;
+        background-image: url("assets/Astrid & Rafa-19.jpg");
+        background-size: cover;
+        background-position: center 28%;
+      }
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(40, 26, 20, 0.15) 0%,
+          rgba(40, 26, 20, 0.3) 55%,
+          rgba(40, 26, 20, 0.72) 100%
+        );
+      }
+      .hero-inner {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        padding: 60px 30px calc(24cqw + 36px);
+      }
+      /* solid panel matching the countdown section's background, with a
+         dome-shaped hole punched out so the hero photo shows through as
+         a single full-width arc dipping into the section below — full
+         width where it meets the photo above, tapering to a point at
+         the very bottom */
+      .hero-ears {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        height: 24cqw;
+        background: var(--ink);
+        -webkit-mask-image: radial-gradient(
+          ellipse 50% 100% at 50% 0%,
+          transparent 99%,
+          #000 100%
+        );
+        mask-image: radial-gradient(
+          ellipse 50% 100% at 50% 0%,
+          transparent 99%,
+          #000 100%
+        );
+      }
 
-.couple-names{
-  font-size:clamp(2.6rem, 9vw, 3.4rem);
-  font-style:italic;
-  color:var(--ink);
-  line-height:1.15;
-  margin:8px 0 6px;
-}
-.couple-names .amp{
-  display:block;
-  color:var(--terracotta);
-  font-size:1.3rem;
-  margin:4px 0;
-  font-family:var(--display);
-}
-.hero-tagline{color:var(--ink-soft); font-size:1rem; margin-bottom:26px;}
+      .couple-names {
+        font-size: clamp(2.6rem, 9vw, 3.4rem);
+        font-style: italic;
+        color: #fff;
+        line-height: 1.15;
+        margin: 8px 0 6px;
+        text-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+      }
+      .couple-names .amp {
+        display: block;
+        color: var(--gold);
+        font-size: 1.3rem;
+        margin: 4px 0;
+        font-family: var(--display);
+      }
+      .hero-tagline {
+        color: #f3e9dc;
+        font-size: 1rem;
+        margin-bottom: 30px;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      }
 
-.hero-photo-wrap{margin:0 auto 26px; max-width:340px;}
+      .hero-date {
+        display: inline-flex;
+        gap: 14px;
+        align-items: baseline;
+        justify-content: center;
+        font-family: var(--display);
+        font-style: normal;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #f8efe3;
+        font-size: 0.85rem;
+        margin-bottom: 28px;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+      }
+      .hero-date .date-day {
+        font-size: 2.6rem;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-transform: none;
+        color: var(--gold);
+        line-height: 1;
+      }
+      .hero-date .date-sep {
+        opacity: 0.55;
+        font-size: 0.75em;
+      }
 
-.hero-date-pill{
-  display:inline-flex; gap:10px; align-items:baseline; justify-content:center;
-  font-family:var(--display); font-style:italic; color:var(--burgundy);
-  font-size:1.25rem; padding:10px 26px; border:1px solid var(--terracotta);
-  border-radius:999px; background:var(--paper);
-}
-.hero-scrolldown{margin-top:36px; display:flex; flex-direction:column; align-items:center; gap:6px; color:var(--ink-soft); font-size:.75rem; letter-spacing:.2em; text-transform:uppercase;}
-.hero-scrolldown svg{width:16px;height:22px;animation:bob 1.8s ease-in-out infinite;}
-@keyframes bob{0%,100%{transform:translateY(0);}50%{transform:translateY(6px);}}
+      .hero-scrolldown {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        color: #f3e9dc;
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      }
+      .hero-scrolldown svg {
+        width: 16px;
+        height: 22px;
+        animation: bob 1.8s ease-in-out infinite;
+      }
+      @keyframes bob {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(6px);
+        }
+      }
 
-/* =========================================================
+      /* =========================================================
    2. COUNTDOWN
    ========================================================= */
-.countdown-section{
-  background:var(--ink);
-  color:var(--cream);
-  text-align:center;
-}
-.countdown-section .section-title{color:var(--gold);}
-.countdown-section .section-sub{color:#E9D9C8;}
-.countdown-grid{
-  display:grid; grid-template-columns:repeat(4,1fr); gap:10px;
-  max-width:420px; margin:0 auto;
-}
-.countdown-cell{
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(240,204,74,.35);
-  border-radius:10px;
-  padding:16px 4px;
-}
-.countdown-num{
-  font-family:var(--display); font-size:clamp(1.8rem,7vw,2.4rem); color:var(--gold); font-variant-numeric:tabular-nums;
-}
-.countdown-label{
-  font-size:.62rem; letter-spacing:.18em; text-transform:uppercase; color:#E9D9C8; margin-top:4px;
-}
-.countdown-done{font-family:var(--display); font-style:italic; font-size:1.4rem; color:var(--gold); display:none;}
+      .countdown-section {
+        background: var(--ink);
+        color: var(--cream);
+        text-align: center;
+      }
+      .countdown-section .section-title {
+        color: var(--gold);
+      }
+      .countdown-section .section-sub {
+        color: #e9d9c8;
+      }
+      .countdown-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        max-width: 420px;
+        margin: 0 auto;
+      }
+      .countdown-cell {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(240, 204, 74, 0.35);
+        border-radius: 10px;
+        padding: 16px 4px;
+      }
+      .countdown-num {
+        font-family: var(--display);
+        font-size: clamp(1.8rem, 7vw, 2.4rem);
+        color: var(--gold);
+        font-variant-numeric: tabular-nums;
+      }
+      .countdown-label {
+        font-size: 0.62rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #e9d9c8;
+        margin-top: 4px;
+      }
+      .countdown-done {
+        font-family: var(--display);
+        font-style: italic;
+        font-size: 1.4rem;
+        color: var(--gold);
+        display: none;
+      }
 
-/* small watercolor accents for sections that hold no photograph —
+      /* small watercolor accents for sections that hold no photograph —
    one per section, kept deliberately small so it stays a quiet detail */
-.corner-bloom{position:absolute; width:76px; height:76px; opacity:.92; pointer-events:none; z-index:0;}
-.corner-bloom.tl{top:-8px; left:-8px;}
-.corner-bloom.tr{top:-8px; right:-8px; transform:scaleX(-1);}
-.corner-bloom.bl{bottom:-8px; left:-8px; transform:scaleY(-1);}
-.corner-bloom.br{bottom:-8px; right:-8px; transform:rotate(180deg);}
-.corner-bloom.sm{width:56px; height:56px;}
+      .corner-bloom {
+        position: absolute;
+        width: 76px;
+        height: 76px;
+        opacity: 0.92;
+        pointer-events: none;
+        z-index: 0;
+      }
+      .corner-bloom.tl {
+        top: -8px;
+        left: -8px;
+      }
+      .corner-bloom.tr {
+        top: -8px;
+        right: -8px;
+        transform: scaleX(-1);
+      }
+      .corner-bloom.bl {
+        bottom: -8px;
+        left: -8px;
+        transform: scaleY(-1);
+      }
+      .corner-bloom.br {
+        bottom: -8px;
+        right: -8px;
+        transform: rotate(180deg);
+      }
+      .corner-bloom.sm {
+        width: 56px;
+        height: 56px;
+      }
 
-/* =========================================================
+      /* =========================================================
    3. STORY — shown over one of the couple's photos as a background
    ========================================================= */
-.story{
-  position:relative;
-  text-align:center;
-  color:#fff;
-  background:var(--ink);
-}
-.story::before{
-  content:"";
-  position:absolute; inset:0;
-  background-image:url('assets/Astrid & Rafa-19.jpg');
-  background-size:cover;
-  background-position:center 30%;
-}
-.story::after{
-  content:"";
-  position:absolute; inset:0;
-  background:linear-gradient(180deg, rgba(40,26,20,.4) 0%, rgba(40,26,20,.86) 100%);
-}
-.story > *{position:relative; z-index:1;}
-.story .eyebrow{color:var(--gold);}
-.story .divider svg{color:var(--gold);}
-.story .divider::before,.story .divider::after{background:linear-gradient(90deg,transparent,var(--gold) 50%,transparent);}
-.story-quote{
-  font-style:italic; font-size:1.3rem; color:#fff; max-width:30ch; margin:0 auto 18px; line-height:1.5;
-}
-.story .section-sub{color:#EFE0CD;}
-.story-names-block{display:flex; justify-content:center; gap:48px; margin-top:30px; flex-wrap:wrap;}
-.parent-group{max-width:200px;}
-.parent-group h4{font-family:var(--display); font-style:italic; color:var(--gold); font-size:.85rem; letter-spacing:.05em; margin-bottom:8px; text-transform:uppercase;}
-.parent-group p{font-size:.92rem; color:#EFE0CD; margin:0;}
+      .story {
+        position: relative;
+        text-align: center;
+        color: #fff;
+        background: var(--ink);
+      }
+      .story::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url("assets/Astrid & Rafa-38.jpg");
+        background-size: cover;
+        background-position: center 30%;
+      }
+      .story::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(40, 26, 20, 0.4) 0%,
+          rgba(40, 26, 20, 0.86) 100%
+        );
+      }
+      .story > * {
+        position: relative;
+        z-index: 1;
+      }
+      .story .eyebrow {
+        color: var(--gold);
+      }
+      .story .divider svg {
+        color: var(--gold);
+      }
+      .story .divider::before,
+      .story .divider::after {
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--gold) 50%,
+          transparent
+        );
+      }
+      .story-quote {
+        font-style: italic;
+        font-size: 1.3rem;
+        color: #fff;
+        max-width: 30ch;
+        margin: 0 auto 18px;
+        line-height: 1.5;
+      }
+      .story .section-sub {
+        color: #efe0cd;
+      }
+      .story-names-block {
+        display: flex;
+        justify-content: center;
+        gap: 48px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+      }
+      .parent-group {
+        max-width: 200px;
+      }
+      .parent-group h4 {
+        font-family: var(--display);
+        font-style: italic;
+        color: var(--gold);
+        font-size: 0.85rem;
+        letter-spacing: 0.05em;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+      }
+      .parent-group p {
+        font-size: 0.92rem;
+        color: #efe0cd;
+        margin: 0;
+      }
 
-/* =========================================================
+      /* =========================================================
    4. ITINERARY
    ========================================================= */
-.itinerary{background:var(--cream-deep);}
-.itin-list{max-width:340px; margin:0 auto; position:relative;}
-.itin-list::before{content:"";position:absolute; left:23px; top:6px; bottom:6px; width:1px; background:repeating-linear-gradient(to bottom, var(--terracotta) 0 6px, transparent 6px 12px);}
-.itin-item{display:flex; gap:18px; align-items:flex-start; margin-bottom:30px;}
-.itin-item:last-child{margin-bottom:0;}
-.itin-icon{
-  flex:none; width:48px;height:48px; border-radius:50%; background:var(--paper); border:1px solid var(--terracotta);
-  display:flex; align-items:center; justify-content:center; box-shadow:var(--shadow);
-}
-.itin-icon svg{width:24px;height:24px;}
-.itin-text h4{font-family:var(--display); font-style:italic; color:var(--burgundy); font-size:1.1rem; margin-bottom:2px;}
-.itin-text span{display:block; font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; color:var(--terracotta); margin-bottom:4px;}
-.itin-text p{font-size:.9rem; color:var(--ink-soft); margin:0;}
+      .itinerary {
+        background: var(--cream-deep);
+      }
+      .itin-list {
+        max-width: 340px;
+        margin: 0 auto;
+        position: relative;
+      }
+      .itin-list::before {
+        content: "";
+        position: absolute;
+        left: 23px;
+        top: 6px;
+        bottom: 6px;
+        width: 1px;
+        background: repeating-linear-gradient(
+          to bottom,
+          var(--terracotta) 0 6px,
+          transparent 6px 12px
+        );
+      }
+      .itin-item {
+        display: flex;
+        gap: 18px;
+        align-items: flex-start;
+        margin-bottom: 30px;
+      }
+      .itin-item:last-child {
+        margin-bottom: 0;
+      }
+      .itin-icon {
+        flex: none;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: var(--paper);
+        border: 1px solid var(--terracotta);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: var(--shadow);
+      }
+      .itin-icon svg {
+        width: 24px;
+        height: 24px;
+      }
+      .itin-text h4 {
+        font-family: var(--display);
+        font-style: italic;
+        color: var(--burgundy);
+        font-size: 1.1rem;
+        margin-bottom: 2px;
+      }
+      .itin-text span {
+        display: block;
+        font-size: 0.78rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--terracotta);
+        margin-bottom: 4px;
+      }
+      .itin-text p {
+        font-size: 0.9rem;
+        color: var(--ink-soft);
+        margin: 0;
+      }
 
-/* =========================================================
+      /* =========================================================
    5. PHOTO DIVIDERS — full-bleed photos used to separate sections
    ========================================================= */
-.photo-divider{
-  position:relative;
-  height:230px;
-  overflow:hidden;
-  border-top:1px solid rgba(240,204,74,.55);
-  border-bottom:1px solid rgba(240,204,74,.55);
-}
-.photo-divider img{width:100%; height:100%; object-fit:cover; display:block;}
-.photo-divider .no-photo{
-  width:100%; height:100%;
-  background:linear-gradient(135deg, var(--cream-deep), var(--dustyblue) 130%);
-  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;
-  color:var(--ink-soft); text-align:center;
-}
-.photo-divider .no-photo svg{width:28px;height:28px;opacity:.7;}
-.photo-divider .no-photo small{font-size:.62rem; letter-spacing:.05em;}
-@media (max-width:480px){ .photo-divider{height:180px;} }
+      .photo-divider {
+        position: relative;
+        height: 230px;
+        overflow: hidden;
+        border-top: 1px solid rgba(240, 204, 74, 0.55);
+        border-bottom: 1px solid rgba(240, 204, 74, 0.55);
+      }
+      .photo-divider img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .photo-divider .no-photo {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          var(--cream-deep),
+          var(--dustyblue) 130%
+        );
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        color: var(--ink-soft);
+        text-align: center;
+      }
+      .photo-divider .no-photo svg {
+        width: 28px;
+        height: 28px;
+        opacity: 0.7;
+      }
+      .photo-divider .no-photo small {
+        font-size: 0.62rem;
+        letter-spacing: 0.05em;
+      }
+      @media (max-width: 480px) {
+        .photo-divider {
+          height: 180px;
+        }
+      }
 
-/* =========================================================
+      /* =========================================================
    5b. RIPPED-PAPER PHOTO FRAMES (hero photo)
    ========================================================= */
-.photo-frame{
-  position:relative;
-  background:var(--paper);
-  padding:10px;
-  box-shadow:var(--shadow);
-}
-.photo-frame img,
-.photo-frame .no-photo{
-  clip-path:var(--torn);
-  width:100%; aspect-ratio:3/4; object-fit:cover; display:block;
-}
-.photo-frame .no-photo{
-  background:
-    linear-gradient(135deg, var(--cream-deep), var(--dustyblue) 130%);
-  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;
-  color:var(--ink-soft); text-align:center; padding:10px;
-}
-.photo-frame .no-photo svg{width:34px;height:34px; opacity:.7;}
-.photo-frame .no-photo small{font-size:.62rem; letter-spacing:.05em;}
+      .photo-frame {
+        position: relative;
+        background: var(--paper);
+        padding: 10px;
+        box-shadow: var(--shadow);
+      }
+      .photo-frame img,
+      .photo-frame .no-photo {
+        clip-path: var(--torn);
+        width: 100%;
+        aspect-ratio: 3/4;
+        object-fit: cover;
+        display: block;
+      }
+      .photo-frame .no-photo {
+        background: linear-gradient(
+          135deg,
+          var(--cream-deep),
+          var(--dustyblue) 130%
+        );
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        color: var(--ink-soft);
+        text-align: center;
+        padding: 10px;
+      }
+      .photo-frame .no-photo svg {
+        width: 34px;
+        height: 34px;
+        opacity: 0.7;
+      }
+      .photo-frame .no-photo small {
+        font-size: 0.62rem;
+        letter-spacing: 0.05em;
+      }
 
-.frame-1{--torn:polygon(2% 4%,9% 0%,17% 3%,25% 0%,33% 3%,41% 0%,49% 3%,57% 0%,65% 3%,73% 0%,81% 3%,89% 0%,96% 4%,100% 11%,97% 18%,100% 27%,96% 34%,100% 42%,97% 50%,100% 58%,96% 66%,100% 74%,97% 82%,100% 90%,95% 97%,88% 100%,80% 96%,72% 100%,64% 97%,56% 100%,48% 96%,40% 100%,32% 97%,24% 100%,16% 96%,8% 100%,2% 95%,0% 88%,4% 80%,0% 72%,3% 64%,0% 56%,4% 48%,0% 40%,3% 32%,0% 24%,4% 16%,0% 8%);}
-.frame-2{--torn:polygon(4% 2%,12% 5%,20% 1%,28% 4%,36% 0%,44% 4%,52% 1%,60% 5%,68% 1%,76% 4%,84% 0%,92% 4%,100% 2%,98% 10%,100% 19%,96% 27%,100% 36%,97% 44%,100% 52%,96% 60%,100% 68%,97% 76%,100% 84%,96% 92%,100% 98%,90% 96%,82% 100%,74% 96%,66% 100%,58% 97%,50% 100%,42% 96%,34% 100%,26% 97%,18% 100%,10% 96%,2% 100%,0% 92%,3% 84%,0% 76%,4% 68%,0% 60%,3% 52%,0% 44%,4% 36%,0% 28%,3% 20%,0% 12%,3% 4%);}
-.frame-3{--torn:polygon(3% 6%,10% 1%,18% 5%,26% 2%,34% 6%,42% 1%,50% 5%,58% 0%,66% 5%,74% 1%,82% 6%,90% 2%,97% 6%,100% 14%,96% 22%,100% 30%,97% 38%,100% 46%,95% 54%,100% 62%,96% 70%,100% 78%,97% 86%,100% 94%,93% 99%,85% 95%,77% 100%,69% 96%,61% 100%,53% 97%,45% 100%,37% 96%,29% 100%,21% 97%,13% 100%,5% 96%,0% 90%,4% 82%,0% 74%,3% 66%,0% 58%,4% 50%,0% 42%,3% 34%,0% 26%,4% 18%,0% 10%);}
-.frame-4{--torn:polygon(1% 8%,7% 2%,14% 6%,22% 1%,30% 5%,38% 2%,46% 6%,54% 1%,62% 5%,70% 2%,78% 6%,86% 1%,93% 5%,100% 9%,96% 17%,100% 25%,97% 33%,100% 41%,96% 49%,100% 57%,97% 65%,100% 73%,96% 81%,100% 89%,94% 96%,87% 99%,79% 95%,71% 100%,63% 96%,55% 100%,47% 97%,39% 100%,31% 96%,23% 100%,15% 97%,7% 100%,1% 93%,4% 85%,0% 77%,3% 69%,0% 61%,4% 53%,0% 45%,3% 37%,0% 29%,4% 21%,0% 13%);}
-.frame-5{--torn:polygon(5% 3%,13% 0%,21% 4%,29% 1%,37% 5%,45% 0%,53% 4%,61% 1%,69% 5%,77% 0%,85% 4%,93% 1%,100% 5%,97% 13%,100% 21%,96% 29%,100% 37%,97% 45%,100% 53%,96% 61%,100% 69%,97% 77%,100% 85%,95% 93%,100% 100%,91% 97%,83% 100%,75% 96%,67% 100%,59% 97%,51% 100%,43% 96%,35% 100%,27% 97%,19% 100%,11% 96%,3% 100%,0% 92%,4% 84%,0% 76%,3% 68%,0% 60%,4% 52%,0% 44%,3% 36%,0% 28%,4% 20%,0% 12%,3% 4%);}
-.frame-1{transform:rotate(-3deg);} .frame-2{transform:rotate(2.5deg);} .frame-3{transform:rotate(-1.5deg);} .frame-4{transform:rotate(3deg);} .frame-5{transform:rotate(-2deg);}
+      .frame-1 {
+        --torn: polygon(
+          2% 4%,
+          9% 0%,
+          17% 3%,
+          25% 0%,
+          33% 3%,
+          41% 0%,
+          49% 3%,
+          57% 0%,
+          65% 3%,
+          73% 0%,
+          81% 3%,
+          89% 0%,
+          96% 4%,
+          100% 11%,
+          97% 18%,
+          100% 27%,
+          96% 34%,
+          100% 42%,
+          97% 50%,
+          100% 58%,
+          96% 66%,
+          100% 74%,
+          97% 82%,
+          100% 90%,
+          95% 97%,
+          88% 100%,
+          80% 96%,
+          72% 100%,
+          64% 97%,
+          56% 100%,
+          48% 96%,
+          40% 100%,
+          32% 97%,
+          24% 100%,
+          16% 96%,
+          8% 100%,
+          2% 95%,
+          0% 88%,
+          4% 80%,
+          0% 72%,
+          3% 64%,
+          0% 56%,
+          4% 48%,
+          0% 40%,
+          3% 32%,
+          0% 24%,
+          4% 16%,
+          0% 8%
+        );
+      }
+      .frame-2 {
+        --torn: polygon(
+          4% 2%,
+          12% 5%,
+          20% 1%,
+          28% 4%,
+          36% 0%,
+          44% 4%,
+          52% 1%,
+          60% 5%,
+          68% 1%,
+          76% 4%,
+          84% 0%,
+          92% 4%,
+          100% 2%,
+          98% 10%,
+          100% 19%,
+          96% 27%,
+          100% 36%,
+          97% 44%,
+          100% 52%,
+          96% 60%,
+          100% 68%,
+          97% 76%,
+          100% 84%,
+          96% 92%,
+          100% 98%,
+          90% 96%,
+          82% 100%,
+          74% 96%,
+          66% 100%,
+          58% 97%,
+          50% 100%,
+          42% 96%,
+          34% 100%,
+          26% 97%,
+          18% 100%,
+          10% 96%,
+          2% 100%,
+          0% 92%,
+          3% 84%,
+          0% 76%,
+          4% 68%,
+          0% 60%,
+          3% 52%,
+          0% 44%,
+          4% 36%,
+          0% 28%,
+          3% 20%,
+          0% 12%,
+          3% 4%
+        );
+      }
+      .frame-3 {
+        --torn: polygon(
+          3% 6%,
+          10% 1%,
+          18% 5%,
+          26% 2%,
+          34% 6%,
+          42% 1%,
+          50% 5%,
+          58% 0%,
+          66% 5%,
+          74% 1%,
+          82% 6%,
+          90% 2%,
+          97% 6%,
+          100% 14%,
+          96% 22%,
+          100% 30%,
+          97% 38%,
+          100% 46%,
+          95% 54%,
+          100% 62%,
+          96% 70%,
+          100% 78%,
+          97% 86%,
+          100% 94%,
+          93% 99%,
+          85% 95%,
+          77% 100%,
+          69% 96%,
+          61% 100%,
+          53% 97%,
+          45% 100%,
+          37% 96%,
+          29% 100%,
+          21% 97%,
+          13% 100%,
+          5% 96%,
+          0% 90%,
+          4% 82%,
+          0% 74%,
+          3% 66%,
+          0% 58%,
+          4% 50%,
+          0% 42%,
+          3% 34%,
+          0% 26%,
+          4% 18%,
+          0% 10%
+        );
+      }
+      .frame-4 {
+        --torn: polygon(
+          1% 8%,
+          7% 2%,
+          14% 6%,
+          22% 1%,
+          30% 5%,
+          38% 2%,
+          46% 6%,
+          54% 1%,
+          62% 5%,
+          70% 2%,
+          78% 6%,
+          86% 1%,
+          93% 5%,
+          100% 9%,
+          96% 17%,
+          100% 25%,
+          97% 33%,
+          100% 41%,
+          96% 49%,
+          100% 57%,
+          97% 65%,
+          100% 73%,
+          96% 81%,
+          100% 89%,
+          94% 96%,
+          87% 99%,
+          79% 95%,
+          71% 100%,
+          63% 96%,
+          55% 100%,
+          47% 97%,
+          39% 100%,
+          31% 96%,
+          23% 100%,
+          15% 97%,
+          7% 100%,
+          1% 93%,
+          4% 85%,
+          0% 77%,
+          3% 69%,
+          0% 61%,
+          4% 53%,
+          0% 45%,
+          3% 37%,
+          0% 29%,
+          4% 21%,
+          0% 13%
+        );
+      }
+      .frame-5 {
+        --torn: polygon(
+          5% 3%,
+          13% 0%,
+          21% 4%,
+          29% 1%,
+          37% 5%,
+          45% 0%,
+          53% 4%,
+          61% 1%,
+          69% 5%,
+          77% 0%,
+          85% 4%,
+          93% 1%,
+          100% 5%,
+          97% 13%,
+          100% 21%,
+          96% 29%,
+          100% 37%,
+          97% 45%,
+          100% 53%,
+          96% 61%,
+          100% 69%,
+          97% 77%,
+          100% 85%,
+          95% 93%,
+          100% 100%,
+          91% 97%,
+          83% 100%,
+          75% 96%,
+          67% 100%,
+          59% 97%,
+          51% 100%,
+          43% 96%,
+          35% 100%,
+          27% 97%,
+          19% 100%,
+          11% 96%,
+          3% 100%,
+          0% 92%,
+          4% 84%,
+          0% 76%,
+          3% 68%,
+          0% 60%,
+          4% 52%,
+          0% 44%,
+          3% 36%,
+          0% 28%,
+          4% 20%,
+          0% 12%,
+          3% 4%
+        );
+      }
+      .frame-1 {
+        transform: rotate(-3deg);
+      }
+      .frame-2 {
+        transform: rotate(2.5deg);
+      }
+      .frame-3 {
+        transform: rotate(-1.5deg);
+      }
+      .frame-4 {
+        transform: rotate(3deg);
+      }
+      .frame-5 {
+        transform: rotate(-2deg);
+      }
 
-.hero-photo-wrap .photo-frame img,.hero-photo-wrap .photo-frame .no-photo{aspect-ratio:4/5;}
-
-/* =========================================================
+      /* =========================================================
    6. VENUE / MAPS
    ========================================================= */
-.venue-card{
-  background:var(--paper); border-radius:4px; box-shadow:var(--shadow); padding:26px; margin-bottom:26px;
-}
-.venue-card:last-child{margin-bottom:0;}
-.venue-kicker{display:flex; align-items:center; gap:10px; margin-bottom:10px;}
-.venue-kicker svg{width:26px;height:26px; flex:none;}
-.venue-kicker span{font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--terracotta);}
-.venue-card h3{font-style:italic; color:var(--burgundy); font-size:1.5rem; margin-bottom:4px;}
-.venue-card .venue-time{color:var(--olive); font-weight:600; font-size:.95rem; margin-bottom:6px;}
-.venue-card .venue-address{color:var(--ink-soft); font-size:.92rem; margin-bottom:16px;}
-.venue-time-list{display:flex; flex-direction:column; gap:8px; margin:12px 0 16px; padding:14px 16px; background:var(--cream-deep); border-radius:8px;}
-.venue-time-row{display:flex; align-items:center; gap:10px; font-size:.92rem; color:var(--ink);}
-.venue-time-row svg{width:19px;height:19px; flex:none; color:var(--terracotta);}
-.venue-time-row strong{color:var(--burgundy); font-weight:600;}
-.map-embed{position:relative; width:100%; padding-bottom:62%; border-radius:4px; overflow:hidden; border:1px solid var(--cream-deep); margin-bottom:14px;}
-.map-embed iframe{position:absolute; inset:0; width:100%; height:100%; border:0;}
-.venue-btn{
-  display:inline-flex; align-items:center; gap:8px; text-decoration:none;
-  font-size:.82rem; letter-spacing:.05em; color:var(--paper); background:var(--terracotta);
-  padding:10px 18px; border-radius:999px; font-weight:600;
-}
-.venue-btn svg{width:15px;height:15px;}
+      .venue-card {
+        background: var(--paper);
+        border-radius: 4px;
+        box-shadow: var(--shadow);
+        padding: 26px;
+        margin-bottom: 26px;
+      }
+      .venue-card:last-child {
+        margin-bottom: 0;
+      }
+      .venue-kicker {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+      .venue-kicker svg {
+        width: 26px;
+        height: 26px;
+        flex: none;
+      }
+      .venue-kicker span {
+        font-size: 0.72rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--terracotta);
+      }
+      .venue-card h3 {
+        font-style: italic;
+        color: var(--burgundy);
+        font-size: 1.5rem;
+        margin-bottom: 4px;
+      }
+      .venue-card .venue-time {
+        color: var(--olive);
+        font-weight: 600;
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+      }
+      .venue-card .venue-address {
+        color: var(--ink-soft);
+        font-size: 0.92rem;
+        margin-bottom: 16px;
+      }
+      .venue-time-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin: 12px 0 16px;
+        padding: 14px 16px;
+        background: var(--cream-deep);
+        border-radius: 8px;
+      }
+      .venue-time-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.92rem;
+        color: var(--ink);
+      }
+      .venue-time-row svg {
+        width: 19px;
+        height: 19px;
+        flex: none;
+        color: var(--terracotta);
+      }
+      .venue-time-row strong {
+        color: var(--burgundy);
+        font-weight: 600;
+      }
+      .map-embed {
+        position: relative;
+        width: 100%;
+        padding-bottom: 62%;
+        border-radius: 4px;
+        overflow: hidden;
+        border: 1px solid var(--cream-deep);
+        margin-bottom: 14px;
+      }
+      .map-embed iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+      .venue-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        font-size: 0.82rem;
+        letter-spacing: 0.05em;
+        color: var(--paper);
+        background: var(--terracotta);
+        padding: 10px 18px;
+        border-radius: 999px;
+        font-weight: 600;
+      }
+      .venue-btn svg {
+        width: 15px;
+        height: 15px;
+      }
 
-/* =========================================================
+      /* =========================================================
    7. DRESS CODE
    ========================================================= */
-.dresscode-section{background:var(--ink); color:var(--cream);}
-.dresscode-section .section-title{color:var(--gold);}
-.dresscode-section .section-sub{color:#E9D9C8;}
-.dress-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
-.dress-card{background:rgba(255,255,255,.05); border:1px solid rgba(240,204,74,.3); border-radius:10px; padding:22px 16px; text-align:center;}
-.dress-card svg{width:44px;height:44px;margin:0 auto 12px;}
-.dress-card h4{font-family:var(--display); font-style:italic; color:var(--gold); font-size:1.15rem; margin-bottom:8px;}
-.dress-card p{font-size:.85rem; color:#E9D9C8; margin:0;}
-.palette-row{display:flex; justify-content:center; gap:10px; margin-top:14px;}
-.swatch{width:26px;height:26px;border-radius:50%; border:2px solid rgba(255,255,255,.5);}
+      .dresscode-section {
+        background: var(--ink);
+        color: var(--cream);
+      }
+      .dresscode-section .section-title {
+        color: var(--gold);
+      }
+      .dresscode-section .section-sub {
+        color: #e9d9c8;
+      }
+      .dress-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      .dress-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(240, 204, 74, 0.3);
+        border-radius: 10px;
+        padding: 22px 16px;
+        text-align: center;
+      }
+      .dress-card svg {
+        width: 44px;
+        height: 44px;
+        margin: 0 auto 12px;
+      }
+      .dress-card h4 {
+        font-family: var(--display);
+        font-style: italic;
+        color: var(--gold);
+        font-size: 1.15rem;
+        margin-bottom: 8px;
+      }
+      .dress-card p {
+        font-size: 0.85rem;
+        color: #e9d9c8;
+        margin: 0;
+      }
+      .palette-row {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 14px;
+      }
+      .swatch {
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+      }
 
-/* =========================================================
+      /* =========================================================
    8. GIFT REGISTRY
    ========================================================= */
-.gift-grid{display:flex; flex-direction:column; gap:18px;}
-.gift-card{
-  background:var(--paper); border-radius:10px; box-shadow:var(--shadow); padding:24px; text-align:center;
-}
-.gift-card svg{width:40px;height:40px;margin:0 auto 10px;}
-.gift-card h4{font-style:italic; color:var(--burgundy); font-size:1.2rem; margin-bottom:8px;}
-.gift-card p{font-size:.9rem; color:var(--ink-soft);}
-.bank-box{
-  display:flex; align-items:center; justify-content:space-between; gap:10px;
-  background:var(--cream-deep); border-radius:8px; padding:10px 14px; margin:8px 0; font-size:.85rem;
-}
-.bank-box strong{color:var(--ink); font-weight:600;}
-.copy-btn{
-  border:1px solid var(--terracotta); background:transparent; color:var(--terracotta);
-  border-radius:999px; padding:5px 12px; font-size:.72rem; cursor:pointer; letter-spacing:.05em;
-  transition:background .2s,color .2s;
-}
-.copy-btn:hover{background:var(--terracotta); color:#fff;}
-.gift-links{display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:6px;}
-.gift-links a{
-  text-decoration:none; font-size:.82rem; font-weight:600; color:var(--paper); background:var(--olive);
-  padding:9px 18px; border-radius:999px;
-}
+      .gift-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      .gift-card {
+        background: var(--paper);
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        padding: 24px;
+        text-align: center;
+      }
+      .gift-card svg {
+        width: 40px;
+        height: 40px;
+        margin: 0 auto 10px;
+      }
+      .gift-card h4 {
+        font-style: italic;
+        color: var(--burgundy);
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+      }
+      .gift-card p {
+        font-size: 0.9rem;
+        color: var(--ink-soft);
+      }
+      .bank-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        background: var(--cream-deep);
+        border-radius: 8px;
+        padding: 10px 14px;
+        margin: 8px 0;
+        font-size: 0.85rem;
+      }
+      .bank-box strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+      .copy-btn {
+        border: 1px solid var(--terracotta);
+        background: transparent;
+        color: var(--terracotta);
+        border-radius: 999px;
+        padding: 5px 12px;
+        font-size: 0.72rem;
+        cursor: pointer;
+        letter-spacing: 0.05em;
+        transition:
+          background 0.2s,
+          color 0.2s;
+      }
+      .copy-btn:hover {
+        background: var(--terracotta);
+        color: #fff;
+      }
+      .gift-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 6px;
+      }
+      .gift-links a {
+        text-decoration: none;
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: var(--paper);
+        background: var(--olive);
+        padding: 9px 18px;
+        border-radius: 999px;
+      }
 
-/* =========================================================
+      /* =========================================================
    9. RSVP
    ========================================================= */
-.rsvp-section{background:var(--cream-deep);}
-.rsvp-form{display:flex; flex-direction:column; gap:16px; max-width:400px; margin:0 auto;}
-.field label{display:block; font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; color:var(--olive); margin-bottom:6px;}
-.field input[type="text"],
-.field input[type="email"],
-.field select,
-.field textarea{
-  width:100%; border:1px solid #D8C6AC; background:var(--paper); border-radius:6px;
-  padding:11px 12px; font-family:var(--serif); font-size:.98rem; color:var(--ink);
-}
-.field textarea{resize:vertical; min-height:80px;}
-.radio-group{display:flex; gap:10px;}
-.radio-pill{flex:1;}
-.radio-pill input{display:none;}
-.radio-pill label{
-  display:block; text-align:center; border:1px solid var(--terracotta); border-radius:999px; padding:10px 6px;
-  font-size:.85rem; color:var(--terracotta); cursor:pointer; transition:.2s;
-}
-.radio-pill input:checked + label{background:var(--terracotta); color:#fff;}
-#guestsField{display:none;}
-.rsvp-submit{
-  margin-top:6px; border:none; background:var(--burgundy); color:#fff; padding:14px; border-radius:999px;
-  font-size:.95rem; letter-spacing:.05em; cursor:pointer; font-weight:600; transition:transform .15s, background .2s;
-}
-.rsvp-submit:hover{background:#651034;}
-.rsvp-submit:active{transform:scale(.98);}
-.rsvp-note{font-size:.75rem; color:var(--ink-soft); text-align:center;}
-.rsvp-thanks{display:none; text-align:center;}
-.rsvp-thanks svg{width:50px;height:50px;margin:0 auto 14px;}
-.rsvp-thanks h3{font-style:italic; color:var(--burgundy); font-size:1.6rem; margin-bottom:8px;}
-.rsvp-error{display:none; color:var(--burgundy); font-size:.82rem; text-align:center;}
+      .rsvp-section {
+        background: var(--cream-deep);
+      }
+      .rsvp-form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      .field label {
+        display: block;
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--olive);
+        margin-bottom: 6px;
+      }
+      .field input[type="text"],
+      .field input[type="email"],
+      .field select,
+      .field textarea {
+        width: 100%;
+        border: 1px solid #d8c6ac;
+        background: var(--paper);
+        border-radius: 6px;
+        padding: 11px 12px;
+        font-family: var(--serif);
+        font-size: 0.98rem;
+        color: var(--ink);
+      }
+      .field textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+      .radio-group {
+        display: flex;
+        gap: 10px;
+      }
+      .radio-pill {
+        flex: 1;
+      }
+      .radio-pill input {
+        display: none;
+      }
+      .radio-pill label {
+        display: block;
+        text-align: center;
+        border: 1px solid var(--terracotta);
+        border-radius: 999px;
+        padding: 10px 6px;
+        font-size: 0.85rem;
+        color: var(--terracotta);
+        cursor: pointer;
+        transition: 0.2s;
+      }
+      .radio-pill input:checked + label {
+        background: var(--terracotta);
+        color: #fff;
+      }
+      #guestsField {
+        display: none;
+      }
+      .rsvp-submit {
+        margin-top: 6px;
+        border: none;
+        background: var(--burgundy);
+        color: #fff;
+        padding: 14px;
+        border-radius: 999px;
+        font-size: 0.95rem;
+        letter-spacing: 0.05em;
+        cursor: pointer;
+        font-weight: 600;
+        transition:
+          transform 0.15s,
+          background 0.2s;
+      }
+      .rsvp-submit:hover {
+        background: #651034;
+      }
+      .rsvp-submit:active {
+        transform: scale(0.98);
+      }
+      .rsvp-note {
+        font-size: 0.75rem;
+        color: var(--ink-soft);
+        text-align: center;
+      }
+      .rsvp-thanks {
+        display: none;
+        text-align: center;
+      }
+      .rsvp-thanks svg {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto 14px;
+      }
+      .rsvp-thanks h3 {
+        font-style: italic;
+        color: var(--burgundy);
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+      }
+      .rsvp-error {
+        display: none;
+        color: var(--burgundy);
+        font-size: 0.82rem;
+        text-align: center;
+      }
 
-/* =========================================================
+      /* =========================================================
    10. FOOTER
    ========================================================= */
-footer{
-  text-align:center; padding:56px 30px 70px; background:var(--ink); color:var(--cream);
-}
-footer .footer-monogram{font-family:var(--display); font-style:italic; color:var(--gold); font-size:1.8rem; margin-bottom:10px;}
-footer p{color:#CBB8A6; font-size:.85rem; margin:0 0 4px;}
-footer .hashtag{color:var(--terracotta); font-weight:600; letter-spacing:.05em;}
+      footer {
+        text-align: center;
+        padding: 56px 30px 70px;
+        background: var(--ink);
+        color: var(--cream);
+      }
+      footer .footer-monogram {
+        font-family: var(--display);
+        font-style: italic;
+        color: var(--gold);
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+      footer p {
+        color: #cbb8a6;
+        font-size: 0.85rem;
+        margin: 0 0 4px;
+      }
+      footer .hashtag {
+        color: var(--terracotta);
+        font-weight: 600;
+        letter-spacing: 0.05em;
+      }
 
-/* =========================================================
+      /* =========================================================
    11. FLOATING MUSIC PLAYER
    ========================================================= */
-.music-player{
-  position:fixed; right:18px; bottom:18px; z-index:50;
-  width:56px;height:56px; border-radius:50%; background:var(--burgundy); color:var(--gold);
-  border:2px solid var(--gold); display:flex; align-items:center; justify-content:center;
-  cursor:pointer; box-shadow:0 10px 24px rgba(0,0,0,.35);
-}
-.music-player svg{width:22px;height:22px;}
-.music-player.playing svg#iconPlay{display:none;}
-.music-player:not(.playing) svg#iconPause{display:none;}
-.music-player.playing{animation:spin 5s linear infinite;}
-@keyframes spin{from{transform:rotate(0);}to{transform:rotate(360deg);}}
+      .music-player {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 50;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: var(--burgundy);
+        color: var(--gold);
+        border: 2px solid var(--gold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+      }
+      .music-player svg {
+        width: 22px;
+        height: 22px;
+      }
+      .music-player.playing svg#iconPlay {
+        display: none;
+      }
+      .music-player:not(.playing) svg#iconPause {
+        display: none;
+      }
+      .music-player.playing {
+        animation: spin 5s linear infinite;
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
 
-@media (max-width:480px){
-  .countdown-grid{gap:6px;}
-  .dress-grid{grid-template-columns:1fr;}
-}
-</style>
-</head>
-<body>
-
-<!-- =========================================================
+      @media (max-width: 480px) {
+        .countdown-grid {
+          gap: 6px;
+        }
+        .dress-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- =========================================================
      SVG SYMBOL LIBRARY — reused floral/decorative illustrations
      ========================================================= -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-<defs>
-<filter id="wc" x="-60%" y="-60%" width="220%" height="220%">
-  <feGaussianBlur stdDeviation="2.6"/>
-</filter>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <filter id="wc" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="2.6" />
+        </filter>
 
-<!-- Peony-style watercolor bloom -->
-<symbol id="fl-peony" viewBox="0 0 160 160">
-  <g filter="url(#wc)" opacity=".55">
-    <ellipse cx="80" cy="78" rx="40" ry="34" fill="#E96393"/>
-    <ellipse cx="58" cy="58" rx="26" ry="22" fill="#F56733"/>
-    <ellipse cx="102" cy="62" rx="26" ry="22" fill="#E96393"/>
-    <ellipse cx="80" cy="102" rx="28" ry="24" fill="#820043" opacity=".45"/>
-  </g>
-  <g fill="none" stroke="#3B2A22" stroke-width="1.3" stroke-linecap="round" opacity=".7">
-    <path d="M80,48 C94,52 99,66 90,78 C99,84 97,99 83,103 C90,112 82,124 70,120 C60,128 47,120 50,108 C38,108 34,94 45,86 C36,78 40,64 53,62 C52,50 66,42 80,48Z"/>
-    <path d="M80,66 C87,68 89,76 84,82 C89,86 87,94 79,96 C83,101 78,108 71,105 C65,110 57,105 59,97 C52,96 50,88 57,84 C51,79 54,71 62,70 C61,63 71,60 80,66Z" opacity=".8"/>
-  </g>
-  <circle cx="79" cy="80" r="5.5" fill="#F0CC4A"/>
-  <circle cx="86" cy="76" r="2" fill="#820043"/>
-  <circle cx="73" cy="85" r="2" fill="#820043"/>
-  <circle cx="83" cy="87" r="2" fill="#820043"/>
-</symbol>
+        <!-- Peony-style watercolor bloom -->
+        <symbol id="fl-peony" viewBox="0 0 160 160">
+          <g filter="url(#wc)" opacity=".55">
+            <ellipse cx="80" cy="78" rx="40" ry="34" fill="#E96393" />
+            <ellipse cx="58" cy="58" rx="26" ry="22" fill="#F56733" />
+            <ellipse cx="102" cy="62" rx="26" ry="22" fill="#E96393" />
+            <ellipse
+              cx="80"
+              cy="102"
+              rx="28"
+              ry="24"
+              fill="#820043"
+              opacity=".45"
+            />
+          </g>
+          <g
+            fill="none"
+            stroke="#3B2A22"
+            stroke-width="1.3"
+            stroke-linecap="round"
+            opacity=".7"
+          >
+            <path
+              d="M80,48 C94,52 99,66 90,78 C99,84 97,99 83,103 C90,112 82,124 70,120 C60,128 47,120 50,108 C38,108 34,94 45,86 C36,78 40,64 53,62 C52,50 66,42 80,48Z"
+            />
+            <path
+              d="M80,66 C87,68 89,76 84,82 C89,86 87,94 79,96 C83,101 78,108 71,105 C65,110 57,105 59,97 C52,96 50,88 57,84 C51,79 54,71 62,70 C61,63 71,60 80,66Z"
+              opacity=".8"
+            />
+          </g>
+          <circle cx="79" cy="80" r="5.5" fill="#F0CC4A" />
+          <circle cx="86" cy="76" r="2" fill="#820043" />
+          <circle cx="73" cy="85" r="2" fill="#820043" />
+          <circle cx="83" cy="87" r="2" fill="#820043" />
+        </symbol>
 
-<!-- Poppy-style bloom -->
-<symbol id="fl-poppy" viewBox="0 0 140 140">
-  <g filter="url(#wc)" opacity=".55">
-    <path d="M70,20 C95,25 105,55 90,70 C110,72 112,100 88,105 C95,120 75,132 62,120 C45,128 30,112 42,98 C22,95 22,68 44,62 C36,45 50,18 70,20Z" fill="#F56733"/>
-  </g>
-  <g fill="none" stroke="#3B2A22" stroke-width="1.3" stroke-linecap="round" opacity=".72">
-    <path d="M70,30 C88,34 93,54 82,66"/>
-    <path d="M82,66 C98,70 98,90 80,96"/>
-    <path d="M80,96 C86,108 72,118 62,110"/>
-    <path d="M62,110 C48,116 38,102 48,90"/>
-    <path d="M48,90 C32,88 32,68 50,64"/>
-    <path d="M50,64 C44,48 58,30 70,30"/>
-  </g>
-  <circle cx="70" cy="72" r="9" fill="#3B2A22" opacity=".8"/>
-  <circle cx="70" cy="72" r="4" fill="#F0CC4A"/>
-</symbol>
+        <!-- Poppy-style bloom -->
+        <symbol id="fl-poppy" viewBox="0 0 140 140">
+          <g filter="url(#wc)" opacity=".55">
+            <path
+              d="M70,20 C95,25 105,55 90,70 C110,72 112,100 88,105 C95,120 75,132 62,120 C45,128 30,112 42,98 C22,95 22,68 44,62 C36,45 50,18 70,20Z"
+              fill="#F56733"
+            />
+          </g>
+          <g
+            fill="none"
+            stroke="#3B2A22"
+            stroke-width="1.3"
+            stroke-linecap="round"
+            opacity=".72"
+          >
+            <path d="M70,30 C88,34 93,54 82,66" />
+            <path d="M82,66 C98,70 98,90 80,96" />
+            <path d="M80,96 C86,108 72,118 62,110" />
+            <path d="M62,110 C48,116 38,102 48,90" />
+            <path d="M48,90 C32,88 32,68 50,64" />
+            <path d="M50,64 C44,48 58,30 70,30" />
+          </g>
+          <circle cx="70" cy="72" r="9" fill="#3B2A22" opacity=".8" />
+          <circle cx="70" cy="72" r="4" fill="#F0CC4A" />
+        </symbol>
 
-<!-- Small rose sprig with buds -->
-<symbol id="fl-sprig" viewBox="0 0 120 160">
-  <path d="M60,150 C58,110 62,80 58,40" fill="none" stroke="#7D7F2E" stroke-width="2" stroke-linecap="round"/>
-  <path d="M58,110 C42,104 34,112 30,124" fill="none" stroke="#7D7F2E" stroke-width="1.6"/>
-  <path d="M60,90 C76,84 84,92 88,104" fill="none" stroke="#7D7F2E" stroke-width="1.6"/>
-  <ellipse cx="26" cy="128" rx="12" ry="7" fill="#7D7F2E" opacity=".8" transform="rotate(-25 26 128)"/>
-  <ellipse cx="92" cy="108" rx="12" ry="7" fill="#7D7F2E" opacity=".8" transform="rotate(20 92 108)"/>
-  <g filter="url(#wc)" opacity=".6">
-    <circle cx="58" cy="38" r="16" fill="#E96393"/>
-  </g>
-  <g fill="none" stroke="#3B2A22" stroke-width="1.1" opacity=".7">
-    <path d="M58,26 C66,28 68,36 62,40 C68,44 64,52 56,50 C50,56 42,50 46,44 C40,40 44,30 52,32 C52,26 58,24 58,26Z"/>
-  </g>
-  <circle cx="86" cy="70" r="6" fill="#820043" opacity=".8"/>
-  <circle cx="30" cy="96" r="5" fill="#F0CC4A" opacity=".85"/>
-</symbol>
+        <!-- Small rose sprig with buds -->
+        <symbol id="fl-sprig" viewBox="0 0 120 160">
+          <path
+            d="M60,150 C58,110 62,80 58,40"
+            fill="none"
+            stroke="#7D7F2E"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M58,110 C42,104 34,112 30,124"
+            fill="none"
+            stroke="#7D7F2E"
+            stroke-width="1.6"
+          />
+          <path
+            d="M60,90 C76,84 84,92 88,104"
+            fill="none"
+            stroke="#7D7F2E"
+            stroke-width="1.6"
+          />
+          <ellipse
+            cx="26"
+            cy="128"
+            rx="12"
+            ry="7"
+            fill="#7D7F2E"
+            opacity=".8"
+            transform="rotate(-25 26 128)"
+          />
+          <ellipse
+            cx="92"
+            cy="108"
+            rx="12"
+            ry="7"
+            fill="#7D7F2E"
+            opacity=".8"
+            transform="rotate(20 92 108)"
+          />
+          <g filter="url(#wc)" opacity=".6">
+            <circle cx="58" cy="38" r="16" fill="#E96393" />
+          </g>
+          <g fill="none" stroke="#3B2A22" stroke-width="1.1" opacity=".7">
+            <path
+              d="M58,26 C66,28 68,36 62,40 C68,44 64,52 56,50 C50,56 42,50 46,44 C40,40 44,30 52,32 C52,26 58,24 58,26Z"
+            />
+          </g>
+          <circle cx="86" cy="70" r="6" fill="#820043" opacity=".8" />
+          <circle cx="30" cy="96" r="5" fill="#F0CC4A" opacity=".85" />
+        </symbol>
 
-<!-- Leaf branch -->
-<symbol id="lf-branch" viewBox="0 0 200 80">
-  <path d="M4,40 C50,20 150,20 196,40" fill="none" stroke="#7D7F2E" stroke-width="1.6"/>
-  <g fill="#7D7F2E">
-    <ellipse cx="30" cy="34" rx="12" ry="6" transform="rotate(-20 30 34)" opacity=".85"/>
-    <ellipse cx="60" cy="24" rx="13" ry="6.5" transform="rotate(-8 60 24)" opacity=".85"/>
-    <ellipse cx="100" cy="20" rx="14" ry="7" opacity=".85"/>
-    <ellipse cx="140" cy="24" rx="13" ry="6.5" transform="rotate(8 140 24)" opacity=".85"/>
-    <ellipse cx="170" cy="34" rx="12" ry="6" transform="rotate(20 170 34)" opacity=".85"/>
-  </g>
-  <circle cx="100" cy="40" r="5" fill="#E96393"/>
-  <circle cx="70" cy="44" r="3" fill="#F0CC4A"/>
-  <circle cx="130" cy="44" r="3" fill="#F0CC4A"/>
-</symbol>
+        <!-- Leaf branch -->
+        <symbol id="lf-branch" viewBox="0 0 200 80">
+          <path
+            d="M4,40 C50,20 150,20 196,40"
+            fill="none"
+            stroke="#7D7F2E"
+            stroke-width="1.6"
+          />
+          <g fill="#7D7F2E">
+            <ellipse
+              cx="30"
+              cy="34"
+              rx="12"
+              ry="6"
+              transform="rotate(-20 30 34)"
+              opacity=".85"
+            />
+            <ellipse
+              cx="60"
+              cy="24"
+              rx="13"
+              ry="6.5"
+              transform="rotate(-8 60 24)"
+              opacity=".85"
+            />
+            <ellipse cx="100" cy="20" rx="14" ry="7" opacity=".85" />
+            <ellipse
+              cx="140"
+              cy="24"
+              rx="13"
+              ry="6.5"
+              transform="rotate(8 140 24)"
+              opacity=".85"
+            />
+            <ellipse
+              cx="170"
+              cy="34"
+              rx="12"
+              ry="6"
+              transform="rotate(20 170 34)"
+              opacity=".85"
+            />
+          </g>
+          <circle cx="100" cy="40" r="5" fill="#E96393" />
+          <circle cx="70" cy="44" r="3" fill="#F0CC4A" />
+          <circle cx="130" cy="44" r="3" fill="#F0CC4A" />
+        </symbol>
 
-<!-- Corner spray (kept for reuse, no longer used in hero — see mono-ring for the new minimal hero treatment) -->
-<symbol id="corner-spray" viewBox="0 0 220 220">
-  <use href="#lf-branch" x="-10" y="140" width="200" height="80" transform="rotate(-35 100 180)"/>
-  <use href="#fl-peony" x="10" y="10" width="120" height="120"/>
-  <use href="#fl-sprig" x="90" y="60" width="90" height="120"/>
-  <use href="#fl-poppy" x="0" y="90" width="80" height="80"/>
-</symbol>
+        <!-- Corner spray (kept for reuse, no longer used in hero — see mono-ring for the new minimal hero treatment) -->
+        <symbol id="corner-spray" viewBox="0 0 220 220">
+          <use
+            href="#lf-branch"
+            x="-10"
+            y="140"
+            width="200"
+            height="80"
+            transform="rotate(-35 100 180)"
+          />
+          <use href="#fl-peony" x="10" y="10" width="120" height="120" />
+          <use href="#fl-sprig" x="90" y="60" width="90" height="120" />
+          <use href="#fl-poppy" x="0" y="90" width="80" height="80" />
+        </symbol>
 
-<!-- Minimal monogram ring — two hairline concentric circles, no foliage -->
-<symbol id="mono-ring" viewBox="0 0 200 200">
-  <circle cx="100" cy="100" r="94" fill="none" stroke="currentColor" stroke-width=".75"/>
-  <circle cx="100" cy="100" r="84" fill="none" stroke="currentColor" stroke-width=".5" opacity=".55"/>
-</symbol>
+        <!-- Minimal monogram ring — two hairline concentric circles, no foliage -->
+        <symbol id="mono-ring" viewBox="0 0 200 200">
+          <circle
+            cx="100"
+            cy="100"
+            r="94"
+            fill="none"
+            stroke="currentColor"
+            stroke-width=".75"
+          />
+          <circle
+            cx="100"
+            cy="100"
+            r="84"
+            fill="none"
+            stroke="currentColor"
+            stroke-width=".5"
+            opacity=".55"
+          />
+        </symbol>
 
-<!-- Single-line rose — minimal line-art flourish for the hero (not watercolor) -->
-<symbol id="rose-line" viewBox="0 0 40 58">
-  <g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M20 6c5 .5 8 3.5 7.5 7.5-.4 3.5-4 5.5-7.5 5-4.5-.6-7-3.6-6.5-7C13.9 8 16.5 5.6 20 6Z"/>
-    <path d="M20 18.5c3 2 4 5.5 2.5 9"/>
-    <circle cx="20" cy="12.5" r="2.6"/>
-    <path d="M20 24v28"/>
-    <path d="M20 36c-5-.5-8 2-9.5 6M20 43c5-.5 8 2 9.5 5.5" stroke-width=".95"/>
-  </g>
-</symbol>
+        <!-- Single-line rose — minimal line-art flourish for the hero (not watercolor) -->
+        <symbol id="rose-line" viewBox="0 0 40 58">
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M20 6c5 .5 8 3.5 7.5 7.5-.4 3.5-4 5.5-7.5 5-4.5-.6-7-3.6-6.5-7C13.9 8 16.5 5.6 20 6Z"
+            />
+            <path d="M20 18.5c3 2 4 5.5 2.5 9" />
+            <circle cx="20" cy="12.5" r="2.6" />
+            <path d="M20 24v28" />
+            <path
+              d="M20 36c-5-.5-8 2-9.5 6M20 43c5-.5 8 2 9.5 5.5"
+              stroke-width=".95"
+            />
+          </g>
+        </symbol>
 
-<!-- misc icons -->
-<symbol id="ic-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
-<symbol id="ic-rings" viewBox="0 0 24 24"><circle cx="9" cy="14" r="5.5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="15" cy="14" r="5.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9 8 L11 3 M15 8 L13 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
-<symbol id="ic-toast" viewBox="0 0 24 24"><path d="M7 3v6a5 5 0 0010 0V3M12 14v7M8 21h8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
-<symbol id="ic-dance" viewBox="0 0 24 24"><circle cx="12" cy="4" r="2" fill="currentColor"/><path d="M12 7v6l-4 7M12 13l4 7M7 10l5-1 5 3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-<symbol id="ic-church" viewBox="0 0 24 24"><path d="M12 2v4M9 4h6M5 21V11l7-5 7 5v10M5 21h14M9 21v-6h6v6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
-<symbol id="ic-party" viewBox="0 0 24 24"><path d="M4 21l4-13 13 4-13 9z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="18" cy="5" r="1.4" fill="currentColor"/><circle cx="21" cy="9" r="1" fill="currentColor"/></symbol>
-<symbol id="ic-pin" viewBox="0 0 24 24"><path d="M12 22s7-7.5 7-13a7 7 0 10-14 0c0 5.5 7 13 7 13z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="9" r="2.4" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
-<symbol id="ic-tux" viewBox="0 0 24 24"><path d="M7 4l5 4 5-4M6 4l-2 4 3 2-1 12h12l-1-12 3-2-2-4M9 8l1 12M15 8l-1 12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
-<symbol id="ic-dress" viewBox="0 0 24 24"><path d="M9 2.5c0 1.6 1.3 2.5 3 2.5s3-.9 3-2.5M9 2.5c-.8 1.5-1.3 3.6-1.3 5.5 0 1.2.4 2 1.3 2.7-2.8 1.8-4.5 6-4.5 9.3 0 1.1.7 2 1.8 2h11.4c1.1 0 1.8-.9 1.8-2 0-3.3-1.7-7.5-4.5-9.3.9-.7 1.3-1.5 1.3-2.7 0-1.9-.5-4-1.3-5.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/><path d="M9.5 10.5c1.6.8 3.4.8 5 0" fill="none" stroke="currentColor" stroke-width="1.1"/></symbol>
-<symbol id="ic-gift" viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="11" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M4 13h16M12 9v11M12 9c-2 0-4-1.4-4-3.2C8 4.3 9.3 3 11 3c1.4 0 3 1.8 1 4M12 9c2 0 4-1.4 4-3.2C16 4.3 14.7 3 13 3c-1.4 0-3 1.8-1 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
-<symbol id="ic-plane" viewBox="0 0 24 24"><path d="M3 13l18-9-7 18-3-8-8-1z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
-<symbol id="ic-bank" viewBox="0 0 24 24"><path d="M3 10l9-6 9 6M5 10v9M9 10v9M15 10v9M19 10v9M3 20h18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
-<symbol id="ic-heart" viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a5 5 0 019-3 5 5 0 019 3c0 6-8 11-8 11z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
-<symbol id="ic-camera" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="13.5" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 7l1.5-2h5L16 7" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
-<symbol id="ic-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 12.5l2.6 2.6L16 9.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-<symbol id="ic-play" viewBox="0 0 24 24"><path d="M8 5v14l12-7z" fill="currentColor"/></symbol>
-<symbol id="ic-pause" viewBox="0 0 24 24"><rect x="6" y="5" width="4" height="14" fill="currentColor"/><rect x="14" y="5" width="4" height="14" fill="currentColor"/></symbol>
-<symbol id="ic-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-</defs>
-</svg>
+        <!-- misc icons -->
+        <symbol id="ic-clock" viewBox="0 0 24 24">
+          <circle
+            cx="12"
+            cy="12"
+            r="9"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <path
+            d="M12 7v5l3.5 2"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </symbol>
+        <symbol id="ic-rings" viewBox="0 0 24 24">
+          <circle
+            cx="9"
+            cy="14"
+            r="5.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <circle
+            cx="15"
+            cy="14"
+            r="5.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <path
+            d="M9 8 L11 3 M15 8 L13 3"
+            stroke="currentColor"
+            stroke-width="1.3"
+            stroke-linecap="round"
+          />
+        </symbol>
+        <symbol id="ic-toast" viewBox="0 0 24 24">
+          <path
+            d="M7 3v6a5 5 0 0010 0V3M12 14v7M8 21h8"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </symbol>
+        <symbol id="ic-dance" viewBox="0 0 24 24">
+          <circle cx="12" cy="4" r="2" fill="currentColor" />
+          <path
+            d="M12 7v6l-4 7M12 13l4 7M7 10l5-1 5 3"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="ic-church" viewBox="0 0 24 24">
+          <path
+            d="M12 2v4M9 4h6M5 21V11l7-5 7 5v10M5 21h14M9 21v-6h6v6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="ic-party" viewBox="0 0 24 24">
+          <path
+            d="M4 21l4-13 13 4-13 9z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linejoin="round"
+          />
+          <circle cx="18" cy="5" r="1.4" fill="currentColor" />
+          <circle cx="21" cy="9" r="1" fill="currentColor" />
+        </symbol>
+        <symbol id="ic-pin" viewBox="0 0 24 24">
+          <path
+            d="M12 22s7-7.5 7-13a7 7 0 10-14 0c0 5.5 7 13 7 13z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <circle
+            cx="12"
+            cy="9"
+            r="2.4"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+        </symbol>
+        <symbol id="ic-tux" viewBox="0 0 24 24">
+          <path
+            d="M7 4l5 4 5-4M6 4l-2 4 3 2-1 12h12l-1-12 3-2-2-4M9 8l1 12M15 8l-1 12"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.4"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="ic-dress" viewBox="0 0 24 24">
+          <path
+            d="M9 2.5c0 1.6 1.3 2.5 3 2.5s3-.9 3-2.5M9 2.5c-.8 1.5-1.3 3.6-1.3 5.5 0 1.2.4 2 1.3 2.7-2.8 1.8-4.5 6-4.5 9.3 0 1.1.7 2 1.8 2h11.4c1.1 0 1.8-.9 1.8-2 0-3.3-1.7-7.5-4.5-9.3.9-.7 1.3-1.5 1.3-2.7 0-1.9-.5-4-1.3-5.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.3"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+          />
+          <path
+            d="M9.5 10.5c1.6.8 3.4.8 5 0"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.1"
+          />
+        </symbol>
+        <symbol id="ic-gift" viewBox="0 0 24 24">
+          <rect
+            x="4"
+            y="9"
+            width="16"
+            height="11"
+            rx="1"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <path
+            d="M4 13h16M12 9v11M12 9c-2 0-4-1.4-4-3.2C8 4.3 9.3 3 11 3c1.4 0 3 1.8 1 4M12 9c2 0 4-1.4 4-3.2C16 4.3 14.7 3 13 3c-1.4 0-3 1.8-1 4"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.4"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="ic-plane" viewBox="0 0 24 24">
+          <path
+            d="M3 13l18-9-7 18-3-8-8-1z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="ic-bank" viewBox="0 0 24 24">
+          <path
+            d="M3 10l9-6 9 6M5 10v9M9 10v9M15 10v9M19 10v9M3 20h18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="ic-envelope" viewBox="0 0 24 24">
+          <rect
+            x="3"
+            y="5"
+            width="18"
+            height="14"
+            rx="2"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <path
+            d="M4 6.5l8 6 8-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="ic-heart" viewBox="0 0 24 24">
+          <path
+            d="M12 21s-8-5-8-11a5 5 0 019-3 5 5 0 019 3c0 6-8 11-8 11z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="ic-camera" viewBox="0 0 24 24">
+          <rect
+            x="3"
+            y="7"
+            width="18"
+            height="13"
+            rx="2"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <circle
+            cx="12"
+            cy="13.5"
+            r="4"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <path
+            d="M8 7l1.5-2h5L16 7"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+        </symbol>
+        <symbol id="ic-check" viewBox="0 0 24 24">
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <path
+            d="M8 12.5l2.6 2.6L16 9.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="ic-play" viewBox="0 0 24 24">
+          <path d="M8 5v14l12-7z" fill="currentColor" />
+        </symbol>
+        <symbol id="ic-pause" viewBox="0 0 24 24">
+          <rect x="6" y="5" width="4" height="14" fill="currentColor" />
+          <rect x="14" y="5" width="4" height="14" fill="currentColor" />
+        </symbol>
+        <symbol id="ic-chevron" viewBox="0 0 24 24">
+          <path
+            d="M6 9l6 6 6-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+      </defs>
+    </svg>
 
-<div class="page">
-<div class="invite-card">
-
-  <!-- =========================================================
+    <div class="page">
+      <div class="invite-card">
+        <!-- =========================================================
        HERO
        ========================================================= -->
-  <section class="hero" id="hero">
-    <div class="hero-inner">
-      <!-- <span class="eyebrow-top">Nos casamos</span> -->
-      <div class="monogram-wrap">
-        <svg viewBox="0 0 200 200" aria-hidden="true"><use href="#mono-ring"/></svg>
-        <div class="monogram-letters">R<span class="mono-dot">·</span>A</div>
-      </div>
-      <!-- <svg class="mono-flourish" viewBox="0 0 40 58" aria-hidden="true"><use href="#rose-line"/></svg> -->
+        <!-- EDITAR: foto de portada — se usa como fondo de esta sección -->
+        <section class="hero" id="hero">
+          <div class="hero-overlay" aria-hidden="true"></div>
+          <div class="hero-inner">
+            <!-- EDITAR: nombres de la pareja -->
+            <h1 class="couple-names">
+              Rafa<span class="amp">&amp;</span>Astrid
+            </h1>
+            <p class="hero-tagline">
+              Tenemos el honor de invitarte a celebrar nuestra unión,<br />¡nos
+              casamos!
+            </p>
 
-      <!-- EDITAR: nombres de la pareja -->
-      <h1 class="couple-names">Rafa<span class="amp">&amp;</span>Astrid</h1>
-      <p class="hero-tagline">Tenemos el honor de invitarte a celebrar nuestra unión,<br>¡nos casamos!</p>
+            <!-- EDITAR: fecha de la boda -->
+            <div class="hero-date">
+              <span>Sábado</span><span class="date-sep">|</span
+              ><span class="date-day">28</span><span class="date-sep">|</span
+              ><span>Noviembre 2026</span>
+            </div>
 
-      <div class="hero-photo-wrap">
-        <div class="photo-frame frame-1">
-          <img src="assets/Astrid & Rafa-13.jpg" alt="Rafa y Astrid" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'no-photo',innerHTML:'<svg><use href=&quot;#ic-camera&quot;/></svg><small>assets/Astrid & Rafa-13.jpg</small>'}))">
-        </div>
-      </div>
+            <div class="hero-scrolldown">
+              <span>Descubre más</span>
+              <svg viewBox="0 0 24 24"><use href="#ic-chevron" /></svg>
+            </div>
+          </div>
+          <div class="hero-ears" aria-hidden="true"></div>
+        </section>
 
-      <!-- EDITAR: fecha de la boda -->
-      <div class="hero-date-pill">
-        <span>Sábado</span><span>·</span><span>28 Noviembre 2026</span>
-      </div>
-
-      <div class="hero-scrolldown">
-        <span>Descubre más</span>
-        <svg viewBox="0 0 24 24"><use href="#ic-chevron"/></svg>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================
-       PHOTO DIVIDER — separates Hero from Countdown
-       ========================================================= -->
-  <div class="photo-divider reveal">
-    <img src="assets/Astrid & Rafa-68.jpg" alt="" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'no-photo',innerHTML:'<svg><use href=&quot;#ic-camera&quot;/></svg><small>assets/Astrid & Rafa-19.jpg</small>'}))">
-  </div>
-
-  <!-- =========================================================
+        <!-- =========================================================
        COUNTDOWN — EDITAR: data-date abajo (ISO 8601 con zona horaria)
        ========================================================= -->
-  <section class="countdown-section reveal" id="countdown" data-date="2026-11-28T15:00:00-06:00">
-    <svg class="corner-bloom tr" viewBox="0 0 120 160" aria-hidden="true"><use href="#fl-sprig"/></svg>
-    <span class="eyebrow">Faltan</span>
-    <h2 class="section-title">Para el gran día</h2>
-    <div class="countdown-grid">
-      <div class="countdown-cell"><div class="countdown-num" id="cd-days">00</div><div class="countdown-label">Días</div></div>
-      <div class="countdown-cell"><div class="countdown-num" id="cd-hours">00</div><div class="countdown-label">Horas</div></div>
-      <div class="countdown-cell"><div class="countdown-num" id="cd-mins">00</div><div class="countdown-label">Min</div></div>
-      <div class="countdown-cell"><div class="countdown-num" id="cd-secs">00</div><div class="countdown-label">Seg</div></div>
-    </div>
-    <p class="countdown-done" id="cd-done">¡Hoy nos casamos! 🎉</p>
-  </section>
+        <section
+          class="countdown-section reveal"
+          id="countdown"
+          data-date="2026-11-28T15:00:00-06:00"
+        >
+          <svg class="corner-bloom tr" viewBox="0 0 120 160" aria-hidden="true">
+            <use href="#fl-sprig" />
+          </svg>
+          <span class="eyebrow">Faltan</span>
+          <h2 class="section-title">Para el gran día</h2>
+          <div class="countdown-grid">
+            <div class="countdown-cell">
+              <div class="countdown-num" id="cd-days">00</div>
+              <div class="countdown-label">Días</div>
+            </div>
+            <div class="countdown-cell">
+              <div class="countdown-num" id="cd-hours">00</div>
+              <div class="countdown-label">Horas</div>
+            </div>
+            <div class="countdown-cell">
+              <div class="countdown-num" id="cd-mins">00</div>
+              <div class="countdown-label">Min</div>
+            </div>
+            <div class="countdown-cell">
+              <div class="countdown-num" id="cd-secs">00</div>
+              <div class="countdown-label">Seg</div>
+            </div>
+          </div>
+          <p class="countdown-done" id="cd-done">¡Hoy nos casamos! 🎉</p>
+        </section>
 
-  <!-- =========================================================
+        <!-- =========================================================
        STORY / PADRES
        ========================================================= -->
-  <section class="story reveal">
-    <span class="eyebrow">Nuestra historia</span>
-    <p class="story-quote">"El amor no se mira uno al otro, mira juntos en la misma dirección."</p>
-    <div class="divider"><svg viewBox="0 0 34 34"><use href="#ic-heart"/></svg></div>
-    <p class="section-sub">Con la bendición de Dios primero, y de nuestros padres, queremos compartir este día tan especial junto a ustedes.</p>
+        <section class="story reveal">
+          <span class="eyebrow">Nuestra historia</span>
+          <p class="story-quote">
+            "El amor no se mira uno al otro, mira juntos en la misma dirección."
+          </p>
+          <div class="divider">
+            <svg viewBox="0 0 34 34"><use href="#ic-heart" /></svg>
+          </div>
+          <p class="section-sub">
+            Con la bendición de Dios primero, y de nuestros padres, queremos
+            compartir este día tan especial junto a ustedes.
+          </p>
 
-  <div class="story-names-block">
-      <div class="parent-group">
-        <h4>Padres del novio</h4>
-        <p>Estuardo López ✝<br>Lorena Meza</p>
-      </div>
-      <div class="parent-group">
-        <h4>Madre de la novia</h4>
-        <p>Maria Elena Guzmán<br>
-      </div>
-    </div>
-  </section>
+          <div class="story-names-block">
+            <div class="parent-group">
+              <h4>Padres del novio</h4>
+              <p>Estuardo López ✝<br />Lorena Meza</p>
+            </div>
+            <div class="parent-group">
+              <h4>Madre de la novia</h4>
+              <p>María Elena Garrido<br /></p>
+            </div>
+          </div>
+        </section>
 
-  <!-- =========================================================
-       PHOTO DIVIDER — separates Story from Itinerary
-       ========================================================= -->
-  <!-- <div class="photo-divider reveal">
-    <img src="assets/Astrid & Rafa-55.jpg" alt="" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'no-photo',innerHTML:'<svg><use href=&quot;#ic-camera&quot;/></svg><small>assets/Astrid & Rafa-55.jpg</small>'}))">
-  </div> -->
-
-  <!-- =========================================================
+        <!-- =========================================================
        ITINERARY
        ========================================================= -->
-  <section class="itinerary reveal">
-    <svg class="corner-bloom bl" viewBox="0 0 160 160" aria-hidden="true"><use href="#fl-peony"/></svg>
-    <span class="eyebrow">Cronograma</span>
-    <h2 class="section-title">Itinerario</h2>
-    <div class="itin-list">
-      <div class="itin-item">
-        <div class="itin-icon"><svg><use href="#ic-church"/></svg></div>
-        <div class="itin-text"><span>3:00 PM</span><h4>Ceremonia</h4><p>Restaurante La Cabaña En La Cima</p></div>
-      </div>
-      <div class="itin-item">
-        <div class="itin-icon"><svg><use href="#ic-rings"/></svg></div>
-        <div class="itin-text"><span>4:30 PM</span><h4>Sesión de fotos</h4><p>Jardines del restaurante</p></div>
-      </div>
-      <div class="itin-item">
-        <div class="itin-icon"><svg><use href="#ic-toast"/></svg></div>
-        <div class="itin-text"><span>5:30 PM</span><h4>Recepción y brindis</h4><p>Restaurante La Cabaña En La Cima</p></div>
-      </div>
-      <div class="itin-item">
-        <div class="itin-icon"><svg><use href="#ic-dance"/></svg></div>
-        <div class="itin-text"><span>8:00 PM</span><h4>Cena y fiesta</h4><p>¡A celebrar hasta el amanecer!</p></div>
-      </div>
-    </div>
-  </section>
+        <section class="itinerary reveal">
+          <svg class="corner-bloom bl" viewBox="0 0 160 160" aria-hidden="true">
+            <use href="#fl-peony" />
+          </svg>
+          <span class="eyebrow">Cronograma</span>
+          <h2 class="section-title">Itinerario</h2>
+          <div class="itin-list">
+            <div class="itin-item">
+              <div class="itin-icon">
+                <svg><use href="#ic-church" /></svg>
+              </div>
+              <div class="itin-text">
+                <span>3:00 PM</span>
+                <h4>Ceremonia</h4>
+                <p>Restaurante La Cabaña En La Cima</p>
+              </div>
+            </div>
+            <div class="itin-item">
+              <div class="itin-icon">
+                <svg><use href="#ic-rings" /></svg>
+              </div>
+              <div class="itin-text">
+                <span>4:30 PM</span>
+                <h4>Sesión de fotos</h4>
+                <p>Jardines del restaurante</p>
+              </div>
+            </div>
+            <div class="itin-item">
+              <div class="itin-icon">
+                <svg><use href="#ic-toast" /></svg>
+              </div>
+              <div class="itin-text">
+                <span>5:30 PM</span>
+                <h4>Recepción y brindis</h4>
+                <p>Restaurante La Cabaña En La Cima</p>
+              </div>
+            </div>
+            <div class="itin-item">
+              <div class="itin-icon">
+                <svg><use href="#ic-dance" /></svg>
+              </div>
+              <div class="itin-text">
+                <span>8:00 PM</span>
+                <h4>Cena y fiesta</h4>
+                <p>¡A celebrar hasta el amanecer!</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-  <!-- =========================================================
+                <!-- =========================================================
+       PHOTO DIVIDER — separates Story from Itinerary
+       ========================================================= -->
+        <div class="photo-divider reveal">
+          <img
+            src="assets/Astrid & Rafa-68.jpg"
+            alt=""
+            onerror="
+              this.replaceWith(
+                Object.assign(document.createElement('div'), {
+                  className: 'no-photo',
+                  innerHTML:
+                    '<svg><use href=&quot;#ic-camera&quot;/></svg><small>assets/Astrid & Rafa-68.jpg</small>',
+                }),
+              )
+            "
+          />
+        </div>
+
+        <!-- =========================================================
        VENUE & MAPS — EDITAR: nombre, horarios y dirección si cambian
        Ceremonia y recepción se celebran en el mismo lugar.
        ========================================================= -->
-  <section class="reveal">
-    <svg class="corner-bloom tr sm" viewBox="0 0 120 160" aria-hidden="true"><use href="#fl-sprig"/></svg>
-    <span class="eyebrow">Ubicación</span>
-    <h2 class="section-title">Ceremonia &amp; Recepción</h2>
-    <p class="section-sub">Ambos momentos se celebran en el mismo lugar. Toca el mapa para trazar tu ruta el día del evento.</p>
+        <section class="reveal">
+          <svg
+            class="corner-bloom tr sm"
+            viewBox="0 0 120 160"
+            aria-hidden="true"
+          >
+            <use href="#fl-sprig" />
+          </svg>
+          <span class="eyebrow">Ubicación</span>
+          <h2 class="section-title">Ceremonia &amp; Recepción</h2>
+          <p class="section-sub">
+            Ambos momentos se celebran en el mismo lugar. Toca el mapa para
+            trazar tu ruta el día del evento.
+          </p>
 
-    <div class="venue-card">
-      <div class="venue-kicker"><svg><use href="#ic-pin"/></svg><span>Dos historias, un mismo lugar</span></div>
-      <h3>En La Cima</h3>
-      <p class="venue-address">Calle principal, Laguna Bermeja, Santa Catarina Pinula, Guatemala</p>
-      <div class="venue-time-list">
-        <div class="venue-time-row"><svg><use href="#ic-church"/></svg><span><strong>3:00 PM</strong> — Ceremonia</span></div>
-        <div class="venue-time-row"><svg><use href="#ic-party"/></svg><span><strong>5:30 PM</strong> — Recepción</span></div>
-      </div>
-      <div class="map-embed">
-        <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=14.5686351,-90.4402303&z=16&output=embed"
-          allowfullscreen></iframe>
-      </div>
-      <a class="venue-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Restaurante+La+Caba%C3%B1a+En+La+Cima/@14.5686351,-90.4402303,17z/data=!3m1!4b1!4m6!3m5!1s0x8589bd38072b9373:0xb447529b0ed9c96!8m2!3d14.5686351!4d-90.4402303!16s%2Fg%2F11t_ymq_sk">
-        <svg><use href="#ic-pin"/></svg> Cómo llegar
-      </a>
-    </div>
-  </section>
+          <div class="venue-card">
+            <div class="venue-kicker">
+              <svg><use href="#ic-pin" /></svg
+              ><span>Dos historias, un mismo lugar</span>
+            </div>
+            <h3>En La Cima</h3>
+            <p class="venue-address">
+              Calle principal, Laguna Bermeja, Santa Catarina Pinula, Guatemala
+            </p>
+            <div class="venue-time-list">
+              <div class="venue-time-row">
+                <svg><use href="#ic-church" /></svg
+                ><span><strong>3:00 PM</strong> — Ceremonia</span>
+              </div>
+              <div class="venue-time-row">
+                <svg><use href="#ic-party" /></svg
+                ><span><strong>5:30 PM</strong> — Recepción</span>
+              </div>
+            </div>
+            <div class="map-embed">
+              <iframe
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=14.5686351,-90.4402303&z=16&output=embed"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <a
+              class="venue-btn"
+              target="_blank"
+              rel="noopener"
+              href="https://www.google.com/maps/place/Restaurante+La+Caba%C3%B1a+En+La+Cima/@14.5686351,-90.4402303,17z/data=!3m1!4b1!4m6!3m5!1s0x8589bd38072b9373:0xb447529b0ed9c96!8m2!3d14.5686351!4d-90.4402303!16s%2Fg%2F11t_ymq_sk"
+            >
+              <svg><use href="#ic-pin" /></svg> Cómo llegar
+            </a>
+          </div>
+        </section>
 
-  <!-- =========================================================
+        <!-- =========================================================
        PHOTO DIVIDER — separates Venue from Dress Code
        ========================================================= -->
-  <div class="photo-divider reveal">
-    <img src="assets/Astrid & Rafa-16.jpg" alt="" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'no-photo',innerHTML:'<svg><use href=&quot;#ic-camera&quot;/></svg><small>assets/Astrid & Rafa-16.jpg</small>'}))">
-  </div>
+        <div class="photo-divider reveal">
+          <img
+            src="assets/Astrid & Rafa-16.jpg"
+            alt=""
+            onerror="
+              this.replaceWith(
+                Object.assign(document.createElement('div'), {
+                  className: 'no-photo',
+                  innerHTML:
+                    '<svg><use href=&quot;#ic-camera&quot;/></svg><small>assets/Astrid & Rafa-16.jpg</small>',
+                }),
+              )
+            "
+          />
+        </div>
 
-  <!-- =========================================================
+        <!-- =========================================================
        DRESS CODE — EDITAR: texto e íconos según prefieras
        ========================================================= -->
-  <section class="dresscode-section reveal">
-    <svg class="corner-bloom tl" viewBox="0 0 160 160" aria-hidden="true"><use href="#fl-peony"/></svg>
-    <span class="eyebrow">Etiqueta</span>
-    <h2 class="section-title">Código de vestimenta</h2>
-    <p class="section-sub">Formal · Tonos oscuros y elegantes</p>
-    <div class="dress-grid">
-      <div class="dress-card">
-        <svg><use href="#ic-tux"/></svg>
-        <h4>Caballeros</h4>
-        <p>Traje formal oscuro. Preferimos tonos negros, grafito o vino tinto.</p>
-      </div>
-      <div class="dress-card">
-        <svg><use href="#ic-dress"/></svg>
-        <h4>Damas</h4>
-        <p>Vestido largo o de coctel. Les invitamos a inspirarse en nuestra paleta de colores.</p>
-        <div class="palette-row">
-          <span class="swatch" style="background:#820043"></span>
-          <span class="swatch" style="background:#E96393"></span>
-          <span class="swatch" style="background:#F56733"></span>
-          <span class="swatch" style="background:#F0CC4A"></span>
-          <span class="swatch" style="background:#7D7F2E"></span>
-          <span class="swatch" style="background:#B7D1EA"></span>
-        </div>
-      </div>
-    </div>
-    <p class="section-sub" style="margin-top:22px;">Evitar blanco, hueso y tonos muy claros, reservados para la novia.</p>
-  </section>
+        <section class="dresscode-section reveal">
+          <svg class="corner-bloom tl" viewBox="0 0 160 160" aria-hidden="true">
+            <use href="#fl-peony" />
+          </svg>
+          <span class="eyebrow">Etiqueta</span>
+          <h2 class="section-title">Código de vestimenta</h2>
+          <p class="section-sub">Formal · Tonos oscuros y elegantes</p>
+          <div class="dress-grid">
+            <div class="dress-card">
+              <svg><use href="#ic-tux" /></svg>
+              <h4>Caballeros</h4>
+              <p>
+                Traje formal oscuro. Preferimos tonos negros, grafito o vino
+                tinto.
+              </p>
+            </div>
+            <div class="dress-card">
+              <svg><use href="#ic-dress" /></svg>
+              <h4>Damas</h4>
+              <p>
+                Vestido largo o de coctel. Les invitamos a inspirarse en nuestra
+                paleta de colores.
+              </p>
+              <div class="palette-row">
+                <span class="swatch" style="background: #820043"></span>
+                <span class="swatch" style="background: #e96393"></span>
+                <span class="swatch" style="background: #f56733"></span>
+                <span class="swatch" style="background: #f0cc4a"></span>
+                <span class="swatch" style="background: #7d7f2e"></span>
+                <span class="swatch" style="background: #b7d1ea"></span>
+              </div>
+            </div>
+          </div>
+          <p class="section-sub" style="margin-top: 22px">
+            Evitar blanco, hueso y tonos muy claros, reservados para la novia.
+          </p>
+        </section>
 
-  <!-- =========================================================
+                        <!-- =========================================================
+       PHOTO DIVIDER — separates Story from Itinerary
+       ========================================================= -->
+        <div class="photo-divider reveal">
+          <img
+            src="assets/Astrid & Rafa-1.jpg"
+            alt=""
+            onerror="
+              this.replaceWith(
+                Object.assign(document.createElement('div'), {
+                  className: 'no-photo',
+                  innerHTML:
+                    '<svg><use href=&quot;#ic-camera&quot;/></svg><small>assets/Astrid & Rafa-68.jpg</small>',
+                }),
+              )
+            "
+          />
+        </div>
+
+        <!-- =========================================================
        GIFT REGISTRY — EDITAR: banco, cuenta y enlaces
        ========================================================= -->
-  <section class="reveal">
-    <svg class="corner-bloom tr sm" viewBox="0 0 120 160" aria-hidden="true"><use href="#fl-sprig"/></svg>
-    <span class="eyebrow">Con cariño</span>
-    <h2 class="section-title">Mesa de regalos</h2>
-    <p class="section-sub">Tu presencia es nuestro mejor regalo. Si deseas tener un detalle con nosotros, puedes encontrarnos aquí:</p>
+        <section class="reveal">
+          <svg
+            class="corner-bloom tr sm"
+            viewBox="0 0 120 160"
+            aria-hidden="true"
+          >
+            <use href="#fl-sprig" />
+          </svg>
+          <span class="eyebrow">Con cariño</span>
+          <h2 class="section-title">Mesa de regalos</h2>
+          <p class="section-sub">
+            Tu presencia es nuestro mejor regalo. Si deseas tener un detalle con
+            nosotros, puedes encontrarnos aquí:
+          </p>
 
-    <div class="gift-grid">
-      <div class="gift-card">
-        <svg><use href="#ic-gift"/></svg>
-        <h4>Mesa de regalos</h4>
-        <p>También puedes encontrarnos en nuestra lista de regalos en línea.</p>
-        <div class="gift-links"><a href="#" target="_blank" rel="noopener">Ver mesa de regalos</a></div>
-      </div>
-    </div>
-  </section>
+          <div class="gift-grid">
+            <div class="gift-card">
+              <svg><use href="#ic-gift" /></svg>
+              <h4>Mesa de regalos</h4>
+              <p>
+                También puedes encontrarnos en nuestra lista de regalos en
+                línea.
+              </p>
+              <div class="gift-links">
+                <a href="#" target="_blank" rel="noopener"
+                  >Ver mesa de regalos</a
+                >
+              </div>
+            </div>
 
-  <!-- =========================================================
+            <!-- EDITAR: banco, cuenta y titular -->
+            <div class="gift-card">
+              <svg><use href="#ic-envelope" /></svg>
+              <h4>Sobre de regalo</h4>
+              <p>
+                Si prefieres darnos un regalo en efectivo, puedes traer tu sobre
+                el día de la boda o hacer una transferencia a esta cuenta.
+              </p>
+              <div class="bank-box">
+                <span><strong>Banco:</strong> Banco Industrial</span>
+              </div>
+              <div class="bank-box">
+                <span><strong>Cuenta:</strong> 000-000000-0</span
+                ><button
+                  type="button"
+                  class="copy-btn"
+                  data-copy="000-000000-0"
+                >
+                  Copiar
+                </button>
+              </div>
+              <div class="bank-box">
+                <span><strong>A nombre de:</strong> Rafa &amp; Astrid</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+                        <!-- =========================================================
+       PHOTO DIVIDER — separates Story from Itinerary
+       ========================================================= -->
+        <div class="photo-divider reveal">
+          <img
+            src="assets/Astrid & Rafa-42.jpg"
+            alt=""
+            onerror="
+              this.replaceWith(
+                Object.assign(document.createElement('div'), {
+                  className: 'no-photo',
+                  innerHTML:
+                    '<svg><use href=&quot;#ic-camera&quot;/></svg><small>assets/Astrid & Rafa-42jpg</small>',
+                }),
+              )
+            "
+          />
+        </div>
+
+        <!-- =========================================================
        RSVP — EDITAR: RSVP_ENDPOINT en el <script> final
        ========================================================= -->
-  <section class="rsvp-section reveal">
-    <svg class="corner-bloom bl sm" viewBox="0 0 160 160" aria-hidden="true"><use href="#fl-peony"/></svg>
-    <span class="eyebrow">Confírmanos</span>
-    <h2 class="section-title">Confirma tu asistencia</h2>
-    <p class="section-sub">Te pedimos confirmar antes del 15 de Noviembre de 2026 para poder organizar todo con cariño.</p>
+        <section class="rsvp-section reveal">
+          <svg
+            class="corner-bloom bl sm"
+            viewBox="0 0 160 160"
+            aria-hidden="true"
+          >
+            <use href="#fl-peony" />
+          </svg>
+          <span class="eyebrow">Confírmanos</span>
+          <h2 class="section-title">Confirma tu asistencia</h2>
+          <p class="section-sub">
+            Te pedimos confirmar antes del 15 de Noviembre de 2026 para poder
+            organizar todo con cariño.
+          </p>
 
-    <form class="rsvp-form" id="rsvpForm">
-      <div class="field">
-        <label for="guestName">Nombre completo</label>
-        <input type="text" id="guestName" name="guestName" required placeholder="Tu nombre">
-      </div>
-      <div class="field">
-        <label for="guestEmail">Correo electrónico</label>
-        <input type="email" id="guestEmail" name="guestEmail" placeholder="tucorreo@ejemplo.com">
-      </div>
-      <div class="field">
-        <label>¿Podrás acompañarnos?</label>
-        <div class="radio-group">
-          <div class="radio-pill">
-            <input type="radio" id="attendYes" name="attendance" value="Sí asistiré" required>
-            <label for="attendYes">Sí, ahí estaré</label>
+          <form class="rsvp-form" id="rsvpForm">
+            <div class="field">
+              <label for="guestName">Nombre completo</label>
+              <input
+                type="text"
+                id="guestName"
+                name="guestName"
+                required
+                placeholder="Tu nombre"
+              />
+            </div>
+            <div class="field">
+              <label for="guestEmail">Correo electrónico</label>
+              <input
+                type="email"
+                id="guestEmail"
+                name="guestEmail"
+                placeholder="tucorreo@ejemplo.com"
+              />
+            </div>
+            <div class="field">
+              <label>¿Podrás acompañarnos?</label>
+              <div class="radio-group">
+                <div class="radio-pill">
+                  <input
+                    type="radio"
+                    id="attendYes"
+                    name="attendance"
+                    value="Sí asistiré"
+                    required
+                  />
+                  <label for="attendYes">Sí, ahí estaré</label>
+                </div>
+                <div class="radio-pill">
+                  <input
+                    type="radio"
+                    id="attendNo"
+                    name="attendance"
+                    value="No podré asistir"
+                    required
+                  />
+                  <label for="attendNo">No podré ir</label>
+                </div>
+              </div>
+            </div>
+            <div class="field" id="guestsField">
+              <label for="guestCount"
+                >Número de acompañantes (incluyéndote)</label
+              >
+              <select id="guestCount" name="guestCount">
+                <option value="1">Solo yo</option>
+                <option value="2">2 personas</option>
+                <option value="3">3 personas</option>
+                <option value="4">4 personas</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="guestNote"
+                >Restricciones alimenticias / mensaje</label
+              >
+              <textarea
+                id="guestNote"
+                name="guestNote"
+                placeholder="Alergias, mensaje para los novios, etc."
+              ></textarea>
+            </div>
+            <button type="submit" class="rsvp-submit">
+              Enviar confirmación
+            </button>
+            <p class="rsvp-error" id="rsvpError">
+              Ocurrió un error al enviar. Intenta de nuevo.
+            </p>
+            <p class="rsvp-note">
+              Tus datos solo se usarán para organizar nuestra boda.
+            </p>
+          </form>
+
+          <div class="rsvp-thanks" id="rsvpThanks">
+            <svg><use href="#ic-check" /></svg>
+            <h3>¡Gracias!</h3>
+            <p>
+              Hemos recibido tu confirmación. ¡No podemos esperar a celebrar
+              contigo!
+            </p>
           </div>
-          <div class="radio-pill">
-            <input type="radio" id="attendNo" name="attendance" value="No podré asistir" required>
-            <label for="attendNo">No podré ir</label>
-          </div>
-        </div>
-      </div>
-      <div class="field" id="guestsField">
-        <label for="guestCount">Número de acompañantes (incluyéndote)</label>
-        <select id="guestCount" name="guestCount">
-          <option value="1">Solo yo</option>
-          <option value="2">2 personas</option>
-          <option value="3">3 personas</option>
-          <option value="4">4 personas</option>
-        </select>
-      </div>
-      <div class="field">
-        <label for="guestNote">Restricciones alimenticias / mensaje</label>
-        <textarea id="guestNote" name="guestNote" placeholder="Alergias, mensaje para los novios, etc."></textarea>
-      </div>
-      <button type="submit" class="rsvp-submit">Enviar confirmación</button>
-      <p class="rsvp-error" id="rsvpError">Ocurrió un error al enviar. Intenta de nuevo.</p>
-      <p class="rsvp-note">Tus datos solo se usarán para organizar nuestra boda.</p>
-    </form>
+        </section>
 
-    <div class="rsvp-thanks" id="rsvpThanks">
-      <svg><use href="#ic-check"/></svg>
-      <h3>¡Gracias!</h3>
-      <p>Hemos recibido tu confirmación. ¡No podemos esperar a celebrar contigo!</p>
-    </div>
-  </section>
-
-  <!-- =========================================================
+        <!-- =========================================================
        FOOTER
        ========================================================= -->
-  <footer>
-    <div class="footer-monogram">R &amp; A</div>
-    <p>28 de Noviembre, 2026 · Ciudad de Guatemala</p>
-    <p class="hashtag">#RafaYAstrid2026</p>
-  </footer>
+        <footer>
+          <div class="footer-monogram">R &amp; A</div>
+          <p>28 de Noviembre, 2026 · Ciudad de Guatemala</p>
+          <p class="hashtag">#RafaYAstrid2026</p>
+        </footer>
+      </div>
+    </div>
 
-</div>
-</div>
-
-<!-- =========================================================
+    <!-- =========================================================
      FLOATING MUSIC PLAYER — EDITAR: coloca tu mp3 en assets/music.mp3
      ========================================================= -->
-<audio id="bgMusic" loop preload="none">
-  <source src="assets/music.mp3" type="audio/mpeg">
-</audio>
-<button class="music-player" id="musicToggle" type="button" aria-label="Reproducir música">
-  <svg id="iconPlay" viewBox="0 0 24 24"><use href="#ic-play"/></svg>
-  <svg id="iconPause" viewBox="0 0 24 24"><use href="#ic-pause"/></svg>
-</button>
+    <audio id="bgMusic" loop preload="none">
+      <source src="assets/music.mp3" type="audio/mpeg" />
+    </audio>
+    <button
+      class="music-player"
+      id="musicToggle"
+      type="button"
+      aria-label="Reproducir música"
+    >
+      <svg id="iconPlay" viewBox="0 0 24 24"><use href="#ic-play" /></svg>
+      <svg id="iconPause" viewBox="0 0 24 24"><use href="#ic-pause" /></svg>
+    </button>
 
-<script>
-(function(){
-  "use strict";
+    <script>
+      (function () {
+        "use strict";
 
-  /* =======================================================
+        /* =======================================================
      CONFIG — edit these two values for your own wedding
      ======================================================= */
-  var WEDDING_DATE = document.getElementById('countdown').dataset.date; // reads data-date on the countdown section
-  var RSVP_ENDPOINT = "https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec"; // EDITAR: pega aquí tu URL de Google Apps Script
+        var WEDDING_DATE = document.getElementById("countdown").dataset.date; // reads data-date on the countdown section
+        var RSVP_ENDPOINT =
+          "https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec"; // EDITAR: pega aquí tu URL de Google Apps Script
 
-  /* ---------- Countdown ---------- */
-  function pad(n){ return String(Math.max(0,n)).padStart(2,'0'); }
-  function tickCountdown(){
-    var target = new Date(WEDDING_DATE).getTime();
-    var now = Date.now();
-    var diff = target - now;
-    var el = document.getElementById('countdown');
-    if(diff <= 0){
-      el.querySelector('.countdown-grid').style.display = 'none';
-      document.getElementById('cd-done').style.display = 'block';
-      clearInterval(timer);
-      return;
-    }
-    var d = Math.floor(diff/86400000);
-    var h = Math.floor(diff%86400000/3600000);
-    var m = Math.floor(diff%3600000/60000);
-    var s = Math.floor(diff%60000/1000);
-    document.getElementById('cd-days').textContent = pad(d);
-    document.getElementById('cd-hours').textContent = pad(h);
-    document.getElementById('cd-mins').textContent = pad(m);
-    document.getElementById('cd-secs').textContent = pad(s);
-  }
-  tickCountdown();
-  var timer = setInterval(tickCountdown, 1000);
+        /* ---------- Countdown ---------- */
+        function pad(n) {
+          return String(Math.max(0, n)).padStart(2, "0");
+        }
+        function tickCountdown() {
+          var target = new Date(WEDDING_DATE).getTime();
+          var now = Date.now();
+          var diff = target - now;
+          var el = document.getElementById("countdown");
+          if (diff <= 0) {
+            el.querySelector(".countdown-grid").style.display = "none";
+            document.getElementById("cd-done").style.display = "block";
+            clearInterval(timer);
+            return;
+          }
+          var d = Math.floor(diff / 86400000);
+          var h = Math.floor((diff % 86400000) / 3600000);
+          var m = Math.floor((diff % 3600000) / 60000);
+          var s = Math.floor((diff % 60000) / 1000);
+          document.getElementById("cd-days").textContent = pad(d);
+          document.getElementById("cd-hours").textContent = pad(h);
+          document.getElementById("cd-mins").textContent = pad(m);
+          document.getElementById("cd-secs").textContent = pad(s);
+        }
+        tickCountdown();
+        var timer = setInterval(tickCountdown, 1000);
 
-  /* ---------- Reveal on scroll ---------- */
-  if('IntersectionObserver' in window){
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); }
-      });
-    }, {threshold:.15});
-    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
-  } else {
-    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in-view'); });
-  }
+        /* ---------- Reveal on scroll ---------- */
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("in-view");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.15 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("in-view");
+          });
+        }
 
-  /* ---------- Scroll cue ---------- */
-  var scrollDown = document.querySelector('.hero-scrolldown');
-  if(scrollDown){
-    scrollDown.style.cursor = 'pointer';
-    scrollDown.addEventListener('click', function(){
-      document.getElementById('countdown').scrollIntoView({behavior:'smooth'});
-    });
-  }
+        /* ---------- Scroll cue ---------- */
+        var scrollDown = document.querySelector(".hero-scrolldown");
+        if (scrollDown) {
+          scrollDown.style.cursor = "pointer";
+          scrollDown.addEventListener("click", function () {
+            document
+              .getElementById("countdown")
+              .scrollIntoView({ behavior: "smooth" });
+          });
+        }
 
-  /* ---------- Music player ---------- */
-  var audio = document.getElementById('bgMusic');
-  var musicBtn = document.getElementById('musicToggle');
-  musicBtn.addEventListener('click', function(){
-    if(audio.paused){
-      audio.play().then(function(){
-        musicBtn.classList.add('playing');
-        musicBtn.setAttribute('aria-label','Pausar música');
-      }).catch(function(){ /* autoplay blocked / file missing — silently ignore */ });
-    } else {
-      audio.pause();
-      musicBtn.classList.remove('playing');
-      musicBtn.setAttribute('aria-label','Reproducir música');
-    }
-  });
+        /* ---------- Music player ---------- */
+        var audio = document.getElementById("bgMusic");
+        var musicBtn = document.getElementById("musicToggle");
+        musicBtn.addEventListener("click", function () {
+          if (audio.paused) {
+            audio
+              .play()
+              .then(function () {
+                musicBtn.classList.add("playing");
+                musicBtn.setAttribute("aria-label", "Pausar música");
+              })
+              .catch(function () {
+                /* autoplay blocked / file missing — silently ignore */
+              });
+          } else {
+            audio.pause();
+            musicBtn.classList.remove("playing");
+            musicBtn.setAttribute("aria-label", "Reproducir música");
+          }
+        });
 
-  /* ---------- Copy bank account number ---------- */
-  document.querySelectorAll('.copy-btn').forEach(function(btn){
-    btn.addEventListener('click', function(){
-      var val = btn.getAttribute('data-copy');
-      var done = function(){ var t = btn.textContent; btn.textContent = 'Copiado ✓'; setTimeout(function(){ btn.textContent = t; }, 1600); };
-      if(navigator.clipboard && navigator.clipboard.writeText){
-        navigator.clipboard.writeText(val).then(done).catch(done);
-      } else { done(); }
-    });
-  });
+        /* ---------- Copy bank account number ---------- */
+        document.querySelectorAll(".copy-btn").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var val = btn.getAttribute("data-copy");
+            var done = function () {
+              var t = btn.textContent;
+              btn.textContent = "Copiado ✓";
+              setTimeout(function () {
+                btn.textContent = t;
+              }, 1600);
+            };
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(val).then(done).catch(done);
+            } else {
+              done();
+            }
+          });
+        });
 
-  /* ---------- RSVP form ---------- */
-  var attendRadios = document.querySelectorAll('input[name="attendance"]');
-  var guestsField = document.getElementById('guestsField');
-  attendRadios.forEach(function(r){
-    r.addEventListener('change', function(){
-      guestsField.style.display = (r.value === 'Sí asistiré' && r.checked) ? 'block' : (document.getElementById('attendYes').checked ? 'block' : 'none');
-    });
-  });
+        /* ---------- RSVP form ---------- */
+        var attendRadios = document.querySelectorAll(
+          'input[name="attendance"]',
+        );
+        var guestsField = document.getElementById("guestsField");
+        attendRadios.forEach(function (r) {
+          r.addEventListener("change", function () {
+            guestsField.style.display =
+              r.value === "Sí asistiré" && r.checked
+                ? "block"
+                : document.getElementById("attendYes").checked
+                  ? "block"
+                  : "none";
+          });
+        });
 
-  var form = document.getElementById('rsvpForm');
-  var errorMsg = document.getElementById('rsvpError');
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    errorMsg.style.display = 'none';
+        var form = document.getElementById("rsvpForm");
+        var errorMsg = document.getElementById("rsvpError");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          errorMsg.style.display = "none";
 
-    var data = {
-      guestName: form.guestName.value.trim(),
-      guestEmail: form.guestEmail.value.trim(),
-      attendance: (form.querySelector('input[name="attendance"]:checked') || {}).value || '',
-      guestCount: guestsField.style.display === 'block' ? form.guestCount.value : '1',
-      guestNote: form.guestNote.value.trim(),
-      submittedAt: new Date().toISOString()
-    };
+          var data = {
+            guestName: form.guestName.value.trim(),
+            guestEmail: form.guestEmail.value.trim(),
+            attendance:
+              (form.querySelector('input[name="attendance"]:checked') || {})
+                .value || "",
+            guestCount:
+              guestsField.style.display === "block"
+                ? form.guestCount.value
+                : "1",
+            guestNote: form.guestNote.value.trim(),
+            submittedAt: new Date().toISOString(),
+          };
 
-    if(!data.guestName || !data.attendance){
-      errorMsg.textContent = 'Por favor completa tu nombre y confirma tu asistencia.';
-      errorMsg.style.display = 'block';
-      return;
-    }
+          if (!data.guestName || !data.attendance) {
+            errorMsg.textContent =
+              "Por favor completa tu nombre y confirma tu asistencia.";
+            errorMsg.style.display = "block";
+            return;
+          }
 
-    var submitBtn = form.querySelector('.rsvp-submit');
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Enviando…';
+          var submitBtn = form.querySelector(".rsvp-submit");
+          submitBtn.disabled = true;
+          submitBtn.textContent = "Enviando…";
 
-    // Google Apps Script Web Apps do not return CORS headers when called
-    // cross-origin, so we POST with mode:"no-cors". We can't read the
-    // response, but the request still reaches your Apps Script + Sheet.
-    // See the "RSVP → Google Sheets" guide for full setup steps.
-    fetch(RSVP_ENDPOINT, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: {'Content-Type':'text/plain;charset=utf-8'},
-      body: JSON.stringify(data)
-    }).then(function(){
-      form.style.display = 'none';
-      document.getElementById('rsvpThanks').style.display = 'block';
-    }).catch(function(){
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Enviar confirmación';
-      errorMsg.textContent = 'Ocurrió un error al enviar. Intenta de nuevo.';
-      errorMsg.style.display = 'block';
-    });
-  });
-
-})();
-</script>
-</body>
+          // Google Apps Script Web Apps do not return CORS headers when called
+          // cross-origin, so we POST with mode:"no-cors". We can't read the
+          // response, but the request still reaches your Apps Script + Sheet.
+          // See the "RSVP → Google Sheets" guide for full setup steps.
+          fetch(RSVP_ENDPOINT, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify(data),
+          })
+            .then(function () {
+              form.style.display = "none";
+              document.getElementById("rsvpThanks").style.display = "block";
+            })
+            .catch(function () {
+              submitBtn.disabled = false;
+              submitBtn.textContent = "Enviar confirmación";
+              errorMsg.textContent =
+                "Ocurrió un error al enviar. Intenta de nuevo.";
+              errorMsg.style.display = "block";
+            });
+        });
+      })();
+    </script>
+  </body>
 </html>
