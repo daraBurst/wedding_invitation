@@ -2404,8 +2404,8 @@
 
           <div class="rsvp-thanks" id="rsvpThanks">
             <svg><use href="#ic-check" /></svg>
-            <h3>¡Gracias!</h3>
-            <p>
+            <h3 id="rsvpThanksTitle">¡Gracias!</h3>
+            <p id="rsvpThanksText">
               Hemos recibido tu confirmación. ¡No podemos esperar a celebrar
               contigo!
             </p>
@@ -2609,6 +2609,17 @@
           })
             .then(function () {
               form.style.display = "none";
+              if (data.attendance === "No podré asistir") {
+                document.getElementById("rsvpThanksTitle").textContent =
+                  "¡Gracias por avisarnos!";
+                document.getElementById("rsvpThanksText").textContent =
+                  "Lamentamos que no puedas acompañarnos, pero agradecemos mucho que nos lo hayas hecho saber.";
+              } else {
+                document.getElementById("rsvpThanksTitle").textContent =
+                  "¡Gracias!";
+                document.getElementById("rsvpThanksText").textContent =
+                  "Hemos recibido tu confirmación. ¡No podemos esperar a celebrar contigo!";
+              }
               document.getElementById("rsvpThanks").style.display = "block";
             })
             .catch(function () {
